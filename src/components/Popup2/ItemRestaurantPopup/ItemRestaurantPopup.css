@@ -1,0 +1,76 @@
+
+.Container-Imagine-ItemRestaurantPopup{
+    width: auto;/***/
+}
+.Container-Imagine-ItemRestaurantPopup img{
+    display: block;/*fara asta imi adauga o margine mica la divul in care era imaginea, ori cat de mare sau mica ar fi imaginea*/
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.Continut-ItemRestaurantPopup{
+    padding: 10px;
+}
+.titlu-ItemRestaurantPopup{
+    margin-bottom: 10px;
+}
+.cantitate-ItemRestaurantPopup p{
+    font-size: 1.25rem;
+}
+.descriere-ItemRestaurantPopup p{
+    color: rgb(160, 157, 157);
+    padding: 5px 0;
+}
+.pret-plus-unitate-ItemRestaurantPopup{
+    display: flex;
+    justify-content: space-between;
+}
+.pret-plus-unitate-ItemRestaurantPopup p{
+    font-size: 1.25rem;
+    padding: 10px 0;
+}
+.sugestii-ItemRestaurantPopup{
+    padding: 10px 0;
+}
+.sugestii-ItemRestaurantPopup p{
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.sugestii-ItemRestaurantPopup textarea{
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 75px;
+}
+.counter-plus-buton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.counter *{
+    display: inline;
+}
+.counter p{
+    font-size: 1.25rem;
+}
+.counter i{
+ color: rgb(192, 8, 8);
+ font-size: 1.25rem;
+ padding: 0 10px;
+}
+.buton-ItemRestaurantPopup a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(192, 8, 8);
+    color: white;
+    display: block;
+}
+.buton-ItemRestaurantPopup a:hover{
+    background-color: rgb(221, 7, 7);
+}
+.buton-ItemRestaurantPopup a:active{
+    background-color: rgb(221, 7, 7);
+}

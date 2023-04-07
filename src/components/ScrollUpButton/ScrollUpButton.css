@@ -1,0 +1,29 @@
+.container-ScrollUpButton{
+    position: fixed;
+    bottom: 5%;
+    right: 30px;
+    display: flex;
+    z-index: 1;
+}
+
+.container-ScrollUpButton button i{
+    font-size: 2rem;
+    color: white;
+}
+.container-ScrollUpButton button{
+    width: 50px;
+    height: 80px;
+    background-color: rgb(29, 47, 34, 0.5);
+    border-radius: 25px;
+    border: none;
+}
+.container-ScrollUpButton button:hover{
+    background-color: rgb(32, 46, 36);
+}
+.active{
+    position: fixed;
+    display: block;
+    bottom: 10%;
+    right: 10%;
+}
+

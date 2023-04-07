@@ -1,0 +1,101 @@
+.DespreNoiDescriere-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 80%;
+    position: relative;
+}
+
+.titlu-DespreNoiDescriere{
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.titlu-DespreNoiDescriere h3{
+    font-size: 2rem;
+}
+.titlu-DespreNoiDescriere h3:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.scris-DespreNoiDescriere{
+    text-align: justify; /*!!! asta are scopul de a alinia textul pe latimea intregului rand*/
+}
+
+.scris-DespreNoiDescriere p{
+    margin-bottom: 2rem;
+    line-height: 1.5rem;/*asta stabileste inaltimea liniei pe care sta fontul(nu inaltimea fontului), si este folosita pt a creea un spatiu
+                        vizibil intre linii datorita faptului ca linia propriu zisa este mai inalta decat scrisul care sta pe ea */
+    color: rgb(88, 88, 88);
+}
+
+.poze-DespreNoiDescriere{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vw 10vw 10vw;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.poze-DespreNoiDescriere img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;/*asta era importanta pt. a potrivii imaginile exact in acel 1 fr al containerului*/
+    
+}
+
+
+.continut-DespreNoiDescriere{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.scris-DespreNoiDescriere .subtitlu{
+    color: rgb(14, 190, 161);
+    font-size: 1.25rem;
+}
+
+
+
+@media (max-width: 1180px) {
+
+    .poze-DespreNoiDescriere{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15vw 15vw 15vw 15vw;
+    }
+   #img8{
+    display: none;
+   }
+    
+}
+
+@media (max-width: 800px) {
+    .poze-DespreNoiDescriere{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vw 20vw 20vw;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .poze-DespreNoiDescriere img {
+        width: 275px;
+    }
+    .continut-DespreNoiDescriere{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .poze-DespreNoiDescriere{
+        height: auto;
+    }
+    #img8{
+        display: inline;
+       }
+}

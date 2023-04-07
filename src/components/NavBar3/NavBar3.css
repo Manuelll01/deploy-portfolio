@@ -1,0 +1,268 @@
+.nav-bar-3{
+    
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    padding: 0 100px;/*acelasi pdding trebuie sa il aibe si orice element care se va alinia cu nav-barul*/
+    
+}
+.nav-bar-3 * :not(i){
+    font-family: Lora;
+}
+
+.nav-bar-3.fixed{
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 10vh;
+    background-color: white;
+    
+    transition: 0.75s ease-in-out;
+}
+
+.buton-acasa{
+    display: flex;
+    justify-self: start;
+    position: relative;
+}
+
+.buton-acasa a:after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    bottom: -10px;
+    left: 0%;
+    width: 25%;
+    height: 2px;
+    opacity: 0;
+
+    transition: 0.25s;
+
+}
+
+.buton-acasa a:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    bottom: -4px;
+    left: 0%;
+    width: 50%;
+    height: 2px;
+    opacity: 1;
+
+    transition: 0.25s;
+
+
+}
+
+.buton-acasa a {
+    font-size: 2.5rem;
+    color: #000;
+    text-decoration: none;
+    
+
+}
+
+.responsive-icon i{
+    margin-left: 0.5rem;
+    
+}
+
+
+.responsive-icon{
+    display: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: Lora;
+    
+}
+
+.nav-container{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-container li{
+    margin-left: 2rem;
+    
+}
+.nav-container:last-child{
+    margin-left: none;
+}
+
+
+
+.sidebar-container{
+    position: fixed;
+    left: 100%;/*daca punea vw cand facema din ecran mare in mic se vedea cum se deplaseaza sidebar-ul ascuns datorita tranzitiei incete*/
+    top: 0;/*daca punea vh prelua timpul de tranzitie din clasa aceasta si la schimbarea marimii ecranului se vedea cum se misca side-bar-ul in 0.375s*/
+    list-style: none;
+    height: 100%;
+    width: 300px;
+    z-index: 100;
+    background-color: rgb(70, 69, 69);
+    transition: 0.375s ease-in-out;
+    text-decoration: none;/*nu stiu de ce dar daca pueam doar la ul text-decoration:none; nu mergea*/
+
+    display: none;
+}
+
+.sidebar-container.activ{
+    left: 100%;
+    transform: translate(-100%);
+    transition: 0.675s cubic-bezier(.34,.92,.58,.94);
+    z-index: 1000;
+    top: 0;
+    height: 100%;
+    display: none;
+    
+}
+
+.container-buton-x{
+    font-size: 1.5rem;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 55px;
+    
+}
+.container-buton-x i{
+    cursor: pointer;    
+}
+.nav-link a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+
+.nav-link a::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    bottom: -10px;
+    left: 0%;
+    width: 25%;
+    height: 2px;
+    opacity: 0;
+
+    transition: 0.25s;
+}
+
+.nav-link a:hover::after{
+    width: 50%;
+    bottom: -4px;
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.side-link{
+    height: 70px;
+    width: 300px;
+    
+}
+
+.side-bar{
+    list-style: none;
+    
+}
+
+.side-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    width: 100%;
+    height: 75px;
+    display: flex;/*inainte sa pun display flex nu avea width-ul si height-ul cum am specificat, se vede la hover*/
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    padding: 40px 0 40px 1rem;
+    
+}
+.side-link a:hover{
+    background-color: rgb(88, 88, 88);
+}
+
+.side-link a::after{/*chiar daca asta nu se vede, daca nu este scrisa nu o sa mearga tranzitia*/
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.side-link a:hover::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 960px) {
+
+
+    .buton-acasa{
+        display: flex;
+        justify-self: start;
+    }
+    
+    .responsive-icon{
+        display: flex;
+        justify-content: end;
+        align-content: center;
+        width: auto;
+    
+    }
+    
+    .nav-bar-3{
+        padding: 0 50px;/*orice element care vreau sa fie aliniat cu nav-bar-ul va avea nevoie de media asta*/
+    }
+    .nav-container{
+        display: none;
+    }
+
+    .responsive-icon{
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .sidebar-container{
+        display: block;
+    }
+    .sidebar-container.activ{
+        display: block;
+    }
+}
+@media (max-width: 500px){
+    .nav-bar-3{
+        padding: 0 25px;/*orice element care vreau sa fie aliniat cu nav-bar-ul va avea nevoie de media asta*/
+    }
+    .container-buton-x{
+        padding: 0 30px;
+    }
+}

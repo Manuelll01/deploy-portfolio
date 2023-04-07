@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container-Acordeon{
+    max-width: 800px;
+}
+.Container-Acordeon .Cutie-Acordeon{
+    background: #f1c765;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.Container-Acordeon .Cutie-Acordeon .Titlu-Acordeon{
+    position: relative;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Container-Acordeon .Cutie-Acordeon .Continut-Acordeon{
+    color:#8b7f75;
+    height: 0;
+    overflow: hidden;
+    transition: 0.75s;
+}
+.Container-Acordeon .Cutie-Acordeon.active .Continut-Acordeon{
+    height: 200px;
+    padding: 10px 0;
+    transition: 0.75s;
+}
+.Container-Acordeon .Cutie-Acordeon.active{
+    right: 0;/*nu stiu de ce dar .cutie-acordeon.active se transforma in right: 10% si asta il da inapoi la default*/
+}

@@ -1,0 +1,96 @@
+:root{
+    --const-length: 3;
+}
+
+
+.App{
+    display: grid;
+    grid-template-columns: repeat(var(--const-length), 350px);
+    justify-content: center;
+}
+
+/*.productList{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}*/
+
+.productCard{
+    position: relative;
+    background-color: rgb(212, 209, 209);
+    margin: 1rem;
+    flex: 1 0 25rem;
+    max-width: 20rem;
+    min-height: 35rem;
+    max-height: auto;
+    transition: 0.2s;
+}
+
+.productCard:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;/*!!!*/
+}
+
+.productImage{
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.productCard_cart{
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.productCard_wish{
+    position: absolute;
+    right: 3rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.producCard_FastSelling{
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    font-size: 1.5rem;
+    fill: rgba(233, 151, 0, 0.877);
+}
+
+.productCard_content{
+    margin: 1rem;
+}
+
+.productName{
+    font-size: 1.2rem;
+}
+
+.displayStack_1, .displayStack_2{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productPrice{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.productSales, .productTime{
+    font-size: 1rem;
+    position: absolute;
+    right: 5%;
+}
+
+
+.productCard img{
+    width: 100%;
+
+}

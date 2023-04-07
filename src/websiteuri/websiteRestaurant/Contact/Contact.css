@@ -1,0 +1,103 @@
+.container-footer3{
+    margin-top: auto;
+}
+.container-continut-Restaurant *:not(i){
+    font-family: Roboto;
+}
+.Container-Contact-Restaurant{
+    min-height: 100vh;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+}
+.background-img-restaurant-contact{
+    height: 500px;
+    width: 100%;
+    background-image: url(/src/imagini/background3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.container-iconita-restaurant{
+    padding: 15px 0px;
+}
+.background-img-restaurant-contact-part1{
+    margin-left: 5%;
+}
+.background-img-restaurant-contact-part2{
+    margin-right: 5%;
+    height: 100%;
+    padding: 0 25px;
+}
+.background-img-restaurant-contact-part2 iframe{
+    width: 500px;
+    height: 100%;/*am pus si aici si la container 100% ca sa merga*/
+    border-radius: 20px;
+    border: none;
+}
+
+.Container-Content-Contact-Restaurant{
+    width: 1000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form-Contact-Restaurant{
+    width: 100%;
+    padding: 15px 0;
+}
+
+@media (max-width: 1000px) {
+    .Container-Content-Contact-Restaurant{
+        width: 100%;
+        padding: 15px;
+        padding-top: 0px;
+    }
+    .background-img-restaurant-contact{
+        padding: 50px 15px;
+    }
+    .background-img-restaurant-contact-part1{
+        margin-left: 0;
+    }
+    .background-img-restaurant-contact-part2{
+        margin-right: 0;
+        padding: 20px 0;
+    }
+}
+@media (max-width: 1000px) {
+    .background-img-restaurant-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-img-restaurant-contact{
+        height: auto;
+    }
+    .background-img-restaurant-contact-part2 iframe{
+        height: 400px;
+        width: 500px;
+        
+    }
+    
+}
+@media (max-width: 600px) {
+    .background-img-restaurant-contact-part2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .background-img-restaurant-contact-part2 iframe{
+        height: 250px;
+        width: 350px;/*si aici si la container am pus 100% ca sa mearga*/
+    }
+    
+}

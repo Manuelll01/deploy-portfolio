@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.imagine{
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: rgb(255, 255, 255)!important;/*fara !important nu merge*/
+    background-color: rgb(25, 25, 32);
+    padding: 40px 20px;
+    transform: translateY(-50%);
+}
+
+/*.swiper-button-next::after,
+.swiper-button-prev::after{
+    display: none;    
+}*//* pt cazul in care vreau sa imi implementez sageti custom, si vreau sa le fac pe cele
+basic sa dispara*/
+
+/*.swiper-button-next::before,
+.swiper-button-prev::before{
+    content: '';
+    
+}*/ /* daca vreau sa adaug sageti custom dar nu am reusit sa adaug poza pana acum*/
+
+/*.swiper-button-next,
+.swiper-button-prev{
+    background-image: image('caine.jpg');
+}*/ /* daca vreau sa adaug sageti custom dar nu am reusit sa adaug poza pana acum*/
+.display-apartamente-1{
+    display: block;
+}
+.display-apartamente-2{
+    display: none;
+}
+.link-imagine-ProductSlider-Restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    
+    text-decoration: none;
+    color: rgb(18, 75, 180);
+    position: relative;
+}
+
+.imagine-ProductSlider-Restaurant{
+    width: 100%;
+    height: calc(30vw + 200px);
+    max-height: 700px;
+    object-fit: cover;
+}
+
+/*BUTOANELE CUSTOM (sa le pui in js cu useref):
+.butonPrevSwiper, .butonNextSwiper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 10px;
+    z-index: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 36, 44);
+    
+}*/
+
+.butonPrevSwiper{
+    left: 10px;
+    
+}
+.butonNextSwiper{
+    right: 10px;
+}
+
+
+@media (max-width: 600px){
+    .display-apartamente-1{
+        display: none;
+    }
+    .display-apartamente-2{
+        display: block;
+    }
+}

@@ -1,0 +1,92 @@
+/*fontul este pus in folderul contact.css*/
+.container-footer3{
+    margin-top: auto;
+}
+.Container-Meniu-Restaurant{
+    min-height: 100vh;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+}
+
+.background-img-restaurant_5{
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+    object-fit: cover;
+    margin-bottom: 100px;/*1*/
+}
+.poza_interior_5{
+    width: 600px;
+    position: absolute;
+    bottom: -100px;/*1*/
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.Container-Content-Meniu-Restaurant{
+    width: 100vw;
+    padding-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container-Categorie-Meniu-Restaurant img{
+    width: 400px;
+    aspect-ratio: 3/2;
+    transition: 0.25s;
+    
+}
+.Container-Categorie-Meniu-Restaurant{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0.5rem 0.75rem 1rem 0.5rem #9e9d9d;
+    transition: 0.25s;
+}
+.container-img-Categorie-Meniu-Restaurant{
+    overflow: hidden;
+    width: 400px;
+    aspect-ratio: 3/2;
+}
+.container-img-Categorie-Meniu-Restaurant img{
+    width: 100%;
+    height: 100%;
+}
+.Container-Categorie-Meniu-Restaurant:hover img{
+    transform: scale(1.1);
+    
+    transition: 0.25s;
+}
+.Titlu-Categorie-Meniu-Restaurant{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+}
+@media (max-width: 1000px) {
+    .Container-Content-Meniu-Restaurant{
+        width: 100%;
+        padding: 15px;
+        padding-top: 0;
+    }
+}
+@media (max-width: 500px) {
+    .Container-Categorie-Meniu-Restaurant img{
+        width: 100%;
+        aspect-ratio: 3/2;
+    }
+}

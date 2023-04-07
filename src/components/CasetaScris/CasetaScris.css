@@ -1,0 +1,44 @@
+
+
+
+.container-CasetaScris{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titlu-CasetaScris{
+    
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    
+}
+
+.titlu-CasetaScris h3::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.continut-CasetaScris{
+    word-spacing: 2px;
+    font-size: 1.15rem;
+    color: rgb(88, 88, 88);
+    text-align: justify; /*!!! asta are scopul de a alinia textul pe latimea intregului rand*/
+}
+
+
+.continut-CasetaScris p{/*in calasa asta am props, dar in alta fila unde am umplut propsul cu mai multe elemente<p/> stilul asta se aplica
+                        chiar daca in js de la folderul asta nu este nici un element<p/> in mod direct */
+    margin-top: 0.75rem;
+}

@@ -1,0 +1,154 @@
+.container-WebsiteRestaurant{
+    overflow: hidden;
+}
+.container-WebsiteRestaurant *:not(i){
+    font-family: Roboto;
+}
+.container-grid-restaurant{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas:
+    "img-slider img-slider caseta-1"
+    " caseta-2  caseta-3 caseta-4";
+    font-size: 2rem;
+
+    color: white;
+    min-height: 100vh;
+}
+.container-product-slider-restaurant{
+    grid-area: img-slider;
+    height: calc(30vw + 200px);
+    max-height: 700px;
+}
+.container-caseta-1-restaurant{
+    grid-area: caseta-1;
+    max-height: 700px;
+    background-color: rgb(192, 8, 8);
+}
+.container-caseta-2-restaurant, .container-caseta-3-restaurant, .container-caseta-4-restaurant, .container-caseta-5-restaurant{
+    grid-area: caseta-2;
+    max-height: 700px;
+    background-color: rgb(192, 8, 8);
+    border-bottom: 5px solid white;
+    box-sizing: content-box;
+}
+.container-caseta-3-restaurant{
+    grid-area: caseta-3;
+}
+.container-caseta-4-restaurant{
+    grid-area: caseta-4;
+}
+
+.titlu-caseta-restaurant{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(17, 16, 16);
+    
+    box-sizing: border-box;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+
+    display: block;
+    text-align: center;
+    line-height: 100px;
+}
+.container-butoane-caseta-restaurant-1, .container-butoane-caseta-restaurant{
+    height: 100px;/*nu-mi vine acum o ideie prin care sa stabilesc div-ul asta ca fiidn inaltimea ramasa fara sa scot proprietatea de inaltime de la
+                containerul mare, asa ca am caluclat inaltimea ramasa si am puso aici   ---> puteam sa dau la fiecare element inaltimea in fr cred*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagine-caseta-restaurant{
+    width: 100%;
+    height: 30vw;
+}
+.imagine-caseta-restaurant-jos{
+    width: 100%;
+    height: 100%;
+}
+.container-imagine-caseta-restaurant-1{
+    height: 30vw;
+    
+}
+.container-imagine-caseta-restaurant{
+    height: 30vw;
+    
+}
+
+.buton-caseta-1-restaurant{
+    
+    
+    background-color: rgb(17, 16, 16);
+    border-radius: 10px;
+    
+    display: inline-block;
+    width: calc(100% - 20px);/*datorita faptului ca containerul asta are height si width diferite am folosit cald pentru a lasa spatiu egal pe toate laturiile*/
+                            /*la marginea butonului*/
+    height: calc(100% - 20px);
+    text-align: center;
+    line-height: 80px;
+}
+.buton-caseta-1-restaurant:hover{
+    background-color: black;
+}
+.buton-caseta-1-restaurant a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+#buton1-restaurant{
+    margin-left:10px;
+}
+#buton2-restaurant{
+    margin-right: 10px;
+}
+.container-footer3{
+    margin-top: auto;
+}
+
+@media (max-width: 980px) {
+    .container-grid-restaurant{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img-slider img-slider img-slider"
+        "caseta-1 caseta-1 caseta-1"
+        "caseta-2 caseta-2 caseta-2"
+        "caseta-3 caseta-3 caseta-3"
+        "caseta-4 caseta-4 caseta-4";
+    }
+    .imagine-caseta-restaurant{
+        width: 100%;
+        height: 65vh;
+    }
+    .imagine-caseta-restaurant-jos{
+        width: 100%;
+        height: 100%;
+    }
+    .imagine-caseta-restaurant{
+        width: 100%;
+        height: 100%;
+    }
+    .container-imagine-caseta-restaurant-1{
+        height: 65vw;
+    }
+    .container-imagine-caseta-restaurant{
+        height: 65vw;
+    }
+    .container-caseta-1-restaurant{
+        max-height: none;
+    }
+    .container-caseta-2-restaurant, .container-caseta-3-restaurant, .container-caseta-4-restaurant, .container-caseta-5-restaurant{
+        max-height: none;
+    }
+    .container-product-slider-restaurant{
+        width: 100%;
+    }
+    
+}

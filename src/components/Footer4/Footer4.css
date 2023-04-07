@@ -1,0 +1,43 @@
+.Container-Footer4{
+    padding: 25px;
+    background-color: #0d1988;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.Container-Footer4 ul{
+    list-style: none;
+    
+}
+.Container-Footer4 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.Container-Navigation, .Container-Projects, .Container-Contact{
+    padding: 0;
+}
+.Subtitlu-Footer4{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.Navigation-footer4, .Projects-footer4, .Contact-footer4{
+    display: flex;
+    flex-direction: column;
+}
+
+.Navigation-footer4 > *, .Projects-footer4 > *, .Contact-footer4 > *{
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+.container-info-footer4{
+    display: flex;
+}
+.container-info-footer4 i{
+    padding-right: 10px;
+}
+.Navigation-footer4 *, .Projects-footer4 *{
+    
+    width: auto;
+}

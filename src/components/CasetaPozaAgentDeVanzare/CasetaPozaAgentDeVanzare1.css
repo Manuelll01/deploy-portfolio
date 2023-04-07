@@ -1,0 +1,73 @@
+.caseta-poza-agenta-de-vanzare1{
+    padding: 25px;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    min-width: 300px;
+}
+
+.poza-si-restul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.container-poza-CasetaPozaAgentDeVanzare1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container-poza-CasetaPozaAgentDeVanzare1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.pozitie-angajat p{
+    display: inline;
+    padding: 15px 30px;
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+}
+.adresa-sediu{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.adresa-sediu i{
+    margin-right: 10px;
+}
+.nume-CasetaPozaAgentDeVanzare1{
+    margin-top: 10px;
+    color: grey;
+}
+.butoane-iconite-social-media{
+    margin-top: 10px;
+}
+.butoane-iconite-social-media a i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    color: grey;
+}
+.butoane-contactare{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.butoane-contactare a{
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: rgb(32, 146, 32);
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width:1500px) {
+    .caseta-poza-agenta-de-vanzare1{
+        min-width: none;
+    }
+}

@@ -1,0 +1,249 @@
+
+.margin-top{
+    margin-top: 5rem;
+}
+.prima-pagina{
+    overflow-x: hidden;
+}
+.prima-pagina *:not(i){
+    font-family: Roboto;
+}
+
+.Container-caseta-acasa{
+    min-height: 80vh;
+    background-color: #0d1988;
+    display: flex;
+    justify-content: center;
+    padding: 0 125px;
+}
+.caseta-acasa-mare-grid{
+    width: 1200px;
+    min-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.caseta-acasa-scris{
+    display: block;
+    color: white;
+}
+
+.caseta-acasa-scris h2{
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    max-width: 500px;
+    font-weight: 800;
+}
+.caseta-acasa-scris p{
+    margin-top: 2rem;
+    line-height: 2rem;
+    max-width: 500px;
+}
+.container-butoane-prima-pagina{
+    margin-top: 2rem;
+}
+.buton-1-prima-pagina a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 0);
+    font-size: 1.25rem;
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.buton-2-prima-pagina a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #22104d;
+    font-size: 1.25rem;
+    font-weight: 800;
+    display: inline-block;
+}
+.container-iconite-caseta{
+    display: flex;
+}
+.container-iconite-caseta *{
+    margin-right: 0.25rem;
+    font-size: 2rem;
+}
+.Container-Proiecte{
+    min-height: calc(80vh + 2 * (100vw/6));
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+
+.Container-Proiecte > h1{
+    padding: 0 150px;
+    margin-bottom: 1rem 0;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+}
+
+.Container-Mic-Proiecte{
+    width: 100vw;
+    padding: 0 125px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Proiecte{
+    display: flex;
+    justify-content: center;
+}
+.CasetaMica{    
+    width: 500px;
+    min-width: 450px;
+    aspect-ratio: 1/1;
+    margin: 25px;
+}
+
+.Container-DespreMinePrimaPagina{
+    color: white;
+    min-height: calc(100vh - 2 * (100vw/12));
+    background-color: #0d1988;
+    
+}
+.Container-DespreMinePrimaPagina h2{
+    margin-top: auto;
+}
+.curve{
+    aspect-ratio: 900/150;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.layer1{
+    background-image: url(/src/imagini/wave-haikei2.svg);
+    z-index: 2;
+}
+.layer2{
+    background-image: url(/src/imagini/wave-haikei3.svg);
+    z-index: 2;
+    margin-top: auto;
+}
+.container-iconite-caseta{
+    margin-top: 0.5rem;
+}
+.iconita-1{
+    color: rgb(206, 134, 0);
+}
+.iconita-2{
+    color: rgb(255, 255, 0);
+}
+.iconita-3{
+    color: rgb(0, 89, 255);
+}
+.iconita-4{
+    color: rgb(0, 128, 202);
+}
+.caseta-acasa-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.container-mic-poza-acasa{
+    width: 400px;
+    position: relative;
+}
+.caseta-acasa-img img{
+    width: 100%;
+    display: block;
+}
+
+
+.custom-shape-divider-bottom-1679011994 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679011994 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1679011994 .shape-fill {
+    fill: #0D1988;
+}
+.Container-ContactPrimaPagina{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(80vh + 2 * (100vw/6));
+    justify-content: center;
+    
+}
+.Container-ContactPrimaPagina h1{
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    margin-bottom: 2rem;
+}
+.Container-interior-Contact{/*din cauza formelor de la baza si top-ul divului nu puteam avea display flex simplu in containerul mare*/
+    display: flex;
+    justify-content: center;
+}
+.Container-cutie-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+}
+.cutie-contact{
+    padding: 25px;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0.5rem rgb(180, 176, 176);
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.cutie-contact-iconita{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #0D1988;
+}
+.cutie-contact i{
+    font-size: 2rem;
+    color: white;
+}
+.cutie-contact *{
+    margin: 5px 0;
+}
+
+    /*proiecte*/
+    @media (max-width: 1200px){
+        .Container-caseta-acasa{
+            padding: 0 75px;
+        }
+        .caseta-acasa-img{
+            justify-content: flex-end;
+        }
+        }
+@media (max-width: 960px){
+    /*aici o sa fie primul media pt structura paginii(nu pt elemente), si o sa fie folosita marimea asta la toate sectiuniile*/
+}
+@media (max-width: 600px){
+    .caseta-acasa-poza{
+        display: none;
+    }
+    .caseta-acasa-scris{
+        width: 100%;
+        padding: 0 25px;
+    }
+}

@@ -1,0 +1,164 @@
+
+.container-productcard1 {  /*!!!!!!!!!!!! NETERMINAT !!!!!!!!!!!*/
+    position: static;
+    height: auto;
+    background-color: rgb(202, 209, 211);
+    width: 25vw;/*!!!!! TREBUIE SA DESCOPER CUM SA DAU RESIZE CORECT LA POZE SAU SA SCHIMB POZA*/
+    box-sizing: border-box;
+    border: 3px solid rgb(202, 209, 211);
+    
+}
+
+
+
+.container-productcard1 img {
+    height: 30vh;
+    width: 100%;
+    
+}
+
+.container-productcard1 .info_produs .titlu{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-productcard1 .pret{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 2rem;
+    row-gap: 1.5vh;
+    margin-top: 0.75rem;
+}
+
+.container-productcard1 .pret .e1{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    position: relative;/*nu stiu de ce dar daca am position: relative, rezolv problema cu after-ul
+    si in loc sa fie lungimea intregii pagini, devine doar lungimea <p> ului */
+    transform: scale(0.8);
+    font-weight: 600;
+    
+}
+
+.container-productcard1 .info_produs .pret .e1::after{
+    content: "";
+    background-color: red;
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    left: -3px;
+    bottom: 1.15rem;
+    transform: rotate(167deg);
+}
+
+.container-productcard1 .info_produs .pret .e1::before{
+    content: "";
+    background-color: red;
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    left: -3px;
+    bottom: 1.15rem;
+    transform: rotate(13deg);
+}
+
+.container-productcard1 .pret .e2{
+    display: flex;
+    justify-content: end;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.container-productcard1 .pret .e3{
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-bottom: 0.5rem;
+}
+
+.container-productcard1 .pret .e4{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    color: goldenrod;
+    margin-bottom: 0.5rem;
+}
+
+.container-productcard1 .info_produs{
+    width: 100%;
+    
+}
+
+
+
+.container-productcard1 .info_produs .buton-productcard1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 253);
+    height: 3rem;
+}
+
+.container-productcard1 .info_produs .buton-productcard1{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.buton-final{
+    
+    text-decoration: none;
+}
+
+.container-productcard1 .info_produs .buton-productcard1:hover{
+    transition: 0.5s;
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+@media(max-width: 1100px) {
+    .container-productcard1 .info_produs .pret .e1::after{
+        content: "";
+        background-color: red;
+        width: 75%;
+        height: 2px;
+        position: absolute;
+        left: 5px;
+        top: 1.15rem;
+        transform: rotate(167deg);
+    }
+    
+    .container-productcard1 .info_produs .pret .e1::before{
+        content: "";
+        background-color: red;
+        width: 75%;
+        height: 2px;
+        position: absolute;
+        left: 5px;
+        top: 1.15rem;
+        transform: rotate(13deg);
+    }
+}
+
+@media (max-width: 880px) {
+    .container-productcard1 .info_produs .pret{
+        display: none;
+    }
+    .container-productcard1 .info_produs .buton-final .buton-productcard1{
+        height: 100px;
+    }
+}

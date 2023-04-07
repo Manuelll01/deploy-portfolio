@@ -1,0 +1,96 @@
+/*fontul este pus in folderul contact.css*/
+.container-footer3{
+    margin-top: auto;
+}
+.container-continut-Restaurant{
+    overflow: hidden;
+    
+}
+.Container-Bauturi-Restaurant{
+    min-height: 100vh;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+}
+
+
+.container-container-sageti{
+    padding: 15px;
+}
+
+.container-flex-iteme-Restaurant{/*  !!!  FLEX   !!!*/
+    display: flex;
+    flex-wrap: wrap;/*!!!*/
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.container-grid-iteme-Restaurant{/*  !!!  GRID   !!!*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 100px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+
+
+.container-item{
+    margin: 15px;
+    height: 200px;
+    
+    animation: container-item 1.25s 0s/*0s este timpul de delay la animatie`*/;
+
+    animation-fill-mode: forwards;/*doar de tinut minte*/
+    transform: translateY(-20px);/*daca avea delay animatia era necesar sa am ultimele 3 chiestii ca sa fie pozitionat elementul ca la inceput*/
+    opacity: 0;/*de animatie si sa ramana ca la final de animatie*/
+}
+
+@media (max-width:1250px){
+    .container-grid-iteme-Restaurant{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:900px) {
+    .container-container-sageti{
+        padding: 0 15px;
+    }
+    .container-flex-iteme-Restaurant{
+        padding: 15px;
+    }
+    .container-grid-iteme-Restaurant{
+        grid-template-columns: 1fr;
+    }
+    .container-item{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        min-width: 375px;
+    }
+}
+@media (max-width:450px){
+    .container-flex-Bauturi-Restaurant{
+        padding: 0;
+        
+    }
+}
+@media (max-width:425px) {
+    .container-item{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@keyframes container-item {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.imagine{
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: rgb(30, 9, 146) !important;/*fara !important nu merge*/
+}
+
+
+.mySwiper1{
+    width: 80%;
+}
+
+
+

@@ -1,0 +1,95 @@
+.FormMic1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;/*1(al 3-lea element)*/
+}
+
+.FormMic1 .container-input-FormMic1{
+    position: relative;
+}
+.FormMic1 .titlu-FormMic1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.FormMic1 .container-input-FormMic1 textarea{
+    min-width: 350px;/*1*/
+    max-width: 400px;
+    min-height: 100px;
+    max-height: 200px;
+    outline: none;/*cand selectez un input nu se mai pune tot borderul in jurul lui*/
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.FormMic1 .container-input-FormMic1 input{
+    width: 350px;/*1*/
+    padding: 10px;/*2*/
+    margin-bottom: 10px;
+    outline: none;/*cand selectez un input nu se mai pune tot borderul in jurul lui*/
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.FormMic1 .container-input-FormMic1 input[type="submit"]{
+    width: 100px;
+    border: none;
+    background-color: rgb(24, 75, 185);
+    color: white;
+    font-weight: 600;
+}
+.FormMic1 .container-input-FormMic1 input[type="submit"]:hover{
+    background-color: rgb(58, 111, 228);
+}
+.FormMic1 .container-input-FormMic1 input[type="submit"]:active{
+    background-color: rgb(18, 54, 133);
+}
+.FormMic1 .container-input-FormMic1 span{
+    position: absolute;
+    left: 10px;
+    top: 10px;/*2*/
+    margin: 0;
+    pointer-events: none;/*asta este pentru a nu selecta scrisul daca dai click pe el, ci pentru a selecta ce este sub scris(inputul)*/
+}
+
+.FormMic1 .container-input-FormMic1 span i {
+    margin-right: 0.5rem;
+    
+}
+
+.FormMic1 .container-input-FormMic1 input:focus ~ span{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
+    display: none;
+}
+.FormMic1 .container-input-FormMic1 input:valid ~ span{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
+    display: none;
+}
+
+.FormMic1 .container-input-FormMic1 textarea:focus ~ span{ /* aici ~ Selects every <span> element that is preceded by a <textarea> element*/
+    display: none;
+}
+.FormMic1 .container-input-FormMic1 textarea:valid ~ span{ /* aici ~ Selects every <span> element that is preceded by a <textarea> element*/
+    display: none;
+}
+
+@media (max-width: 525px){
+    .FormMic1{
+        max-width: 250px;
+    }
+    .FormMic1 .container-input-FormMic1 input{
+        
+        max-width: 300px;
+        
+    }
+    .FormMic1 .container-input-FormMic1 textarea{
+        max-width: 300px;
+        min-width: 300px;
+    }
+}

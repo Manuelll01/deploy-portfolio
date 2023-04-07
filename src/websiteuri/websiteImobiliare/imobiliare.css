@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.pagina-imobiliare{
+    width: 100%;
+    height: 100%;
+}
+.pagina-imobiliare * :not(.nav-bar-3 *, i){
+    font-family: Roboto;
+}
+.bla{
+    margin-left: 2rem;
+}
+
+
+
+
+.loop-video{
+    position:fixed;
+    /*background-size: cover;*/
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*asta imi lipsea ca sa pot pune width si height 100% fara sa se dea resize automat*/
+    filter: brightness(85%)/*de tinut minte*/
+    
+}
+
+
+
+.obstacol-inatltime-100vh{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: -2;
+    position: relative;
+}
+
+.a-doua-parte{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.titlu-parte-2{
+    font-size: 3rem;
+
+}
+
+
+.container-titlu-parte-2{
+    position: absolute;/*era spatiu de 10vh intre parte 1 si productcard din cauza position sticky din addeventlistener de la scroll deci am pus 
+    position: absolute; ca sa mplu spatiul*/
+    width: 80%;
+    top: 103.5vh;
+}
+
+.container-titlu-parte-2::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(51, 153, 119);
+    left: 0;
+    bottom: -1vh;
+    position: absolute;
+}
+
+.container-container-titlu-parte-2{
+    display: flex;
+    justify-content: center;
+}
+
+.container-prezentare-parte-2{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.prezentare-parte-2{
+    font-size: 1.5rem;
+}
+
+.container-container-despre-proiect-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+}
+.container-container-despre-proiect-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.container-titlu-despre-proiect{
+    width: 80%;
+    position: relative;/*fara sa precizez pozitia elementul .titlu-despre-proiect::after se randa la inceputul "partii 2" 
+    ca si cum .container-titlu-despre-proiect nu ar exista(ca si cum ar fi fost absolute si nu ar fi ocupat spatiu in pagina)*/
+}
+
+
+.titlu-despre-proiect {
+    font-size: 3rem;
+}
+
+.titlu-despre-proiect::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(51, 153, 119);
+    left: 0;
+    bottom: -2vh;
+    position: absolute;
+}
+
+.container-caseta-display-apartamente{
+    margin-top: 10rem;
+    padding: 2rem;
+}
+
+
+.container-aliniat-prima-pagina{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: -500px;
+    padding: 0 100px;/*aliniere anv-bar*/
+}
+.container-butoane-prima-pagina{
+    display: flex;
+}
+.container-aliniat-prima-pagina ul{
+    list-style: none;
+}
+.container-aliniat-prima-pagina .titlu-aliniat h1{
+    display: inline-block;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 4rem;
+    font-family: Righteous-Regular;
+    /*
+    background-color: rgba(131, 129, 129, 0.6);
+    backdrop-filter: blur(2px); /*atribut nou (de tinut minte)*/
+}
+.buton1-prima-pagina{
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+.buton1-prima-pagina a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(20, 62, 179);
+    padding: 18px 24px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    
+}
+.buton1-prima-pagina:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.buton2-prima-pagina{
+    transition: 0.5s;
+}
+.buton2-prima-pagina a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(20, 159, 28);
+    padding: 18px 24px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.buton2-prima-pagina:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+@media (max-width: 960px){
+    .container-aliniat-prima-pagina{
+        padding: 0 50px;/*media identic cu nav-bar-3 ca sa se alinieze*/
+        align-items: center;
+        text-align: center;
+        bottom: -300px;
+    }
+
+}
+@media (max-width: 500px){
+    .container-aliniat-prima-pagina{
+        padding: 0 25px;/*media identic cu nav-bar-3 ca sa se alinieze*/
+    }
+    .container-butoane-prima-pagina{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buton1-prima-pagina{
+        margin-right: 0;
+    }
+    .buton2-prima-pagina{
+        margin: 3rem 0;
+    }
+}
+
+
+

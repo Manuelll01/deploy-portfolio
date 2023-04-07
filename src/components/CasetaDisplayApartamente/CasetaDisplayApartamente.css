@@ -1,0 +1,286 @@
+
+
+
+.caseta-container{
+    display: grid;
+    grid-template-columns: 2fr 11fr;
+    height: 600px;
+    
+}
+
+.display-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-mare {
+    width: 800px;
+    height: auto;
+}
+
+.img-mica{
+    width: 20rem;
+    height: 12rem;
+    transition: 0.5s;/*pe asta am pus-o aici pt ca am deja effec de hover peste asta cu transition: 0.5s;
+    si vreau sa aibe tranzitie si cand se reintoarce la starea initiala*/
+    position: relative;
+}
+
+.display-garsoniera, .display-doua-camere, .display-trei-camere, .display-patru-camere{
+    display: grid;
+    grid-template-columns: 9fr 4fr;
+    width: 100%;
+}
+
+
+.display-trei-camere .img-mare{
+    width: 600px;
+    height: auto;
+}
+
+
+.display-toate{
+   display: grid;
+   grid-template-columns: 20rem 20rem 20rem ;
+   grid-gap: 3rem;
+   
+}
+
+
+
+.link-imagine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    
+    text-decoration: none;
+    color: rgb(2, 124, 224);
+    padding: 1.2rem;
+    position: relative;
+    
+}
+.link-imagine:after{/*chair daca nu se vede am nevoie de asta pt efectul de tranzitie*/
+    content: "";
+    background-color: rgb(2, 124, 224);
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+}
+.link-imagine:before{/*chair daca nu se vede am nevoie de asta pt efectul de tranzitie*/
+    content: "";
+    background-color: rgb(2, 124, 224);
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.link-imagine:hover::after{
+    content: "";
+    background-color: rgb(2, 124, 224);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transition: 0.5s;
+}
+.link-imagine:hover::before{
+    content: "";
+    background-color: rgb(2, 124, 224);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+
+
+.link-apartamente a{
+    text-decoration: none;
+    color: black;
+}
+
+.x-mp{
+    margin-bottom: 1rem;
+    
+}
+
+.x-mp h3, .mp{
+    display: inline;
+}
+
+.mp > *{
+    display: inline;
+}
+
+.mp2{
+    position: relative;
+    bottom: 5px;
+    font-size: 10px;
+}
+.x-mp h3{
+    font-size: 4rem;
+    margin-right: 1.5rem;
+}   
+
+.container-buton-poze-apartamente{
+    margin-top: 1.5rem;
+    transition: 0.5s;
+}
+
+.buton-poze-apartamente{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: rgb(2, 124, 224);
+    padding: 0.5rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.buton2-poze-apartamente{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: rgb(2, 124, 224);
+    padding: 0.5rem;
+    border-radius: 12px;
+    color: white;
+    display: none;
+}
+
+.container-buton-poze-apartamente:hover{
+    transform: scale(1.05);
+    
+    transition: 0.5s;
+
+}
+
+.titlu-lista{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+
+.titlu-container{
+    position: relative;
+}
+
+.titlu-lista::after{
+    content: "";
+    bottom: 0;
+    left: 0px;
+    width: 20%;
+    height: 3px;
+    background-color: rgb(24, 177, 24);
+    position: absolute;
+}
+
+.titluri-ul{
+    list-style: none;
+    padding-top: 12px;
+}
+
+.pret{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.titluri-ul li{
+    height: 40px;
+    margin-top: 28px;
+}
+
+
+.titluri-ul li a:hover{
+    transform: scale(1.05);
+    position: absolute;/*daca nu aveam position absolute se si mutau din loc catre stanga, si nu imi modifica renderul pt ca
+     li-ul in care sta p-ul nu este absolute chiar daca p-ul este*/
+    transition: 0.5s;
+
+}
+
+.activ2 a{
+    color: rgb(24, 177, 24);
+}
+
+.oprit{
+    display: none;
+}/*asta trebuie sa fie mereu ultimul pt ca daca nu css-ul o sa citeasca fisierele in ordine\
+ de sus pana jos si unele nu o sa-si ia display none pt ca o sa citesca ultima data alt display*/
+
+ @media (max-width: 1355px) {
+    .titlu-informatii-generale{
+        display: none;
+    }
+    .display-garsoniera, .display-doua-camere, .display-trei-camere, .display-patru-camere{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-mare {
+        width: 700px;
+        height: auto;
+    }
+    
+    .display-trei-camere .img-mare{
+        width: 500px;
+        height: auto;
+    }
+
+
+    .oprit{
+        display: none;
+    }
+    
+    
+
+    .img .buton2-poze-apartamente{
+        display: inline;
+        width: 280px;/*nush de ce ia latimea maxima a containerului in mod automat asa ca am pus un width special pt butonul asta */
+        transition: 0.5s;
+    }
+    .buton2-poze-apartamente:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
+    .display-toate{
+        grid-template-columns: 20rem 20rem ;
+     }
+ }
+
+ @media (max-width: 960px) {
+    .display-toate{
+        grid-template-columns: 20rem;
+        overflow-y: scroll;
+        height: 550px;/*daca nu puneam height er auto by default si toate elementele pur si simplu se duceau in jos fara sa fie nevoie de scroll*/
+        
+     }
+     .display-container{
+        justify-content: center;
+        
+        
+     }
+     .display-garsoniera img, .display-doua-camere img, .display-trei-camere img, .display-patru-camere img{
+        transform: scale(0.75);
+     }
+ }

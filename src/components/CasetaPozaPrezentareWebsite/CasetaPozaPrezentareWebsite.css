@@ -1,0 +1,90 @@
+.Container-CasetaPozaPrezentareWebsite{
+    width: 100%;
+    min-width: 230px;
+    height: 600px;
+    position: relative;
+    container-type: inline-size;
+}
+.container-exterior-imagine{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-interior-imagine{
+    width: calc(100% - 30px);/*pun cu calc ci nu 95% ca sa pot alinia asta cu alte componente*/
+    height: calc(100% - 30px);
+    position: absolute;
+}
+
+.container-interior-imagine img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(60%);
+    z-index: 0;
+    
+}
+.container-interior-scris{
+    width: 85%;
+    max-width: 500px;
+    z-index: 10;
+    color: white;
+    position: relative;
+    left: 8%;
+    top: 10%;
+    
+    
+}
+
+.container-interior-scris h2{
+    margin-top: 140px;
+    width: 85%;
+    max-width: 350px;
+    text-transform: uppercase;
+    
+    font-family: 'JosefinSans-Bold';
+}
+.container-interior-scris p{
+    margin-top: 60px;
+    font-family: 'JosefinSans-Bold';
+}
+.Container-CasetaPozaPrezentareWebsite a{
+    position: absolute;/*nu stiu de ce nu merge cu margin-top*/
+    display: inline-block;
+    left: 8%;
+    bottom: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    border: 2px solid white;
+    word-spacing: 5px;
+    transition: 0.5s;
+    font-family: 'Anton-Regular';
+    
+}
+.Container-CasetaPozaPrezentareWebsite a:hover{
+    background-color: white;
+    color: black;
+}
+@container (max-width: 420px){
+    .container-interior-scris h2{
+        margin-top: 50px;
+    } 
+}
+@container (max-width: 380px){
+    .container-interior-scris h2{
+        margin-top: 25px;
+    }
+    .container-interior-scris h2{
+        max-width:450px;
+    }
+}
+

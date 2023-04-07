@@ -1,0 +1,35 @@
+
+.Footer-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(34, 32, 32);
+    height: 6rem;
+    color: white;
+}
+
+.info-content{
+    margin-top: 1rem;
+}
+
+.info{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.info i{
+    margin-right: 0.75rem;
+    color: goldenrod;
+}
+
+.titlu-Footer-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 960px) {
+    .Footer-1{
+        display: none;
+    }
+}

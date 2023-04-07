@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.container-SideBarSlide{
+    display: flex;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.container-SideBarSlide * :not(i){
+    font-family: Roboto;
+}
+
+
+
+
+
+.poza-1{
+    display: inline-block;
+    margin: 5px;
+}
+.poza-1 img{
+    width: 20vw;
+    aspect-ratio: 2/3;
+    
+}
+
+
+
+.buton-meniu-SideBarSlide{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem 0 1rem;
+    color: white;
+}
+.buton-meniu-SideBarSlide a{
+    color: white;
+}
+.SideBarSlide-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(2, 2, 36);
+    z-index: 2;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.poza-SideBarSlide{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: white;
+    
+}
+.poza-SideBarSlide img{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.nume-prenume-cariera{
+    line-height: 25px;
+}
+.nume-prenume-cariera{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.titlu-SideBarSlide{
+    display: flex;
+}
+.titlu-SideBarSlide i{
+    margin-right: 0.75rem;
+}
+.SideBarSlide-side-list{
+    list-style: none;
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.container-display-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 250px;
+    width: 100%;
+    min-height: 100vh;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.informatii-personale{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(17, 17, 17, 0.966);
+
+    /*PENTRU CUSTOM SCROLL-BAR*/
+    height: 100vh;
+    overflow-y: scroll;
+}
+.informatii-personale::-webkit-scrollbar{
+    width: 10px;
+  }
+  .informatii-personale::-webkit-scrollbar-thumb{
+    background-color: #c0bfbf;
+    border-radius: 100vw;
+    width: 80%;
+}
+.informatii-personale::-webkit-scrollbar-thumb:hover{
+    background-color: #888;
+}
+.informatii-personale::-webkit-scrollbar-track{
+    
+    background-color: transparent;
+}
+
+
+.spatiu-scris{
+    display: none;
+    width: 100%;
+}
+.vizibil{
+    display: block;
+}
+
+
+.buton-selectie{
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    display: inline-block;
+    transition: 0.5s;
+} 
+
+.h2-n1{
+    display: inline;
+}
+.h2-n2{
+    display: none;
+}
+
+
+
+            /*ANIMATII USESTATE*/
+
+.activ{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    /* !!!!!am pus stilurile astea doar de test, v-a trebui sa schimb astea doua clase!!!!!*/
+    transition: 0.5s;
+}
+.mic{
+    display: none;
+}
+.mic2{
+    width: 75px;
+}
+.mic2 .buton-selectie p{
+    display: none;
+    transition: 0.5s;
+}
+.mic2 .buton-selectie{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.mic2 .buton-meniu-SideBarSlide{
+    justify-content: center;
+}
+.mic2 .buton-selectie i{
+    position: relative;;
+    left: 50%;
+    transform: translate(-50%);
+}
+.mic2 .SideBarSlide-side-list{
+    margin: 0 10px;
+}
+.mic3{
+    margin-left: 75px;
+}
+.mic4 img{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.mic4 .h2-n1{
+    display: none;
+}
+.mic4 .h2-n2{
+    display: inline;
+}
+
+@media (max-width: 600px){
+    .informatii-personale::-webkit-scrollbar{
+        width: 0px;
+      }
+    .buton-meniu-SideBarSlide{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .container-display-content{
+        margin-left: 75px;
+        display: flex;
+        justify-content: center;
+    }
+    .poza-SideBarSlide img{
+        width: 50px;
+        height: 50px;
+        transition: 0.5s;
+    }
+    .SideBarSlide-side{
+        width: 75px;
+    }
+    .buton-selectie p{
+        display: none;
+        transition: 0.5s;
+    }
+    .buton-selectie{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .buton-meniu-SideBarSlide{
+        justify-content: center;
+    }
+    .buton-selectie i{
+        position: relative;;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .SideBarSlide-side-list{
+        margin: 0 10px;
+    }
+    .h2-n1{
+        display: none;
+    }
+    .h2-n2{
+        display: inline;
+    }
+}

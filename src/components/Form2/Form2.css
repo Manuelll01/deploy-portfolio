@@ -1,0 +1,172 @@
+.Container-Form2{
+    container-type: inline-size;
+    width: 800px;
+}
+.Container-Form2 form{
+    padding: 2rem 4rem 1rem 4rem;
+    box-sizing: padding-box;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0.5rem rgb(180, 176, 176);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+.container-input-Form2{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.titlu-Form2 h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+.container-input-Form2 input{
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.container-input-Form2 span{
+    position: absolute;
+    padding: 15px 0;/*padingul inputului*/
+    top: 10px;/*paddingul containerului inputului*/
+    left: -40px;
+    color: rgb(61, 60, 60);
+    pointer-events: none;
+
+    display: flex;
+    
+}
+.container-input-Form2 span i{
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.container-input-Form2 span p{
+    transition: 0.5s;
+}
+
+.container-input-Form2 input:focus ~ span i{ /* aici ~ Selects every <span> element that is preceded by an <input> element*/
+    color: #0D1988;
+}
+.container-input-Form2 input:valid ~ span i{ /* aici ~ Selects every <span> element that is preceded by an <input> element*/
+    color: #0D1988;
+   }
+.container-input-Form2 textarea:focus ~ span i{ /* aici ~ Selects every <span> element that is preceded by a <textarea> element*/
+    color: #0D1988;
+}
+.container-input-Form2 textarea:valid ~ span i{ /* aici ~ Selects every <span> element that is preceded by a <textarea> element*/
+    color: #0D1988;
+   }
+
+
+.container-input-Form2 input:focus ~ span p{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
+    opacity: 0;
+    font-size: 12px;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+.container-input-Form2 input:valid ~ span p{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
+    opacity: 0;
+    font-size: 12px;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+.container-input-Form2 textarea:focus ~ span p{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
+    opacity: 0;
+    font-size: 12px;
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+.container-input-Form2 textarea:valid ~ span p{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
+    opacity: 0;
+    font-size: 12px;
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+.container-input-Form2 input[type="checkbox"]{
+    width: 20px;
+}
+.container-input-Form2 input[type="radio"]{
+    width: 20px;
+    accent-color: #0D1988;
+}
+.container-input-Form2 input[type="submit"]{
+    width: 150px;
+    background: #0D1988;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    min-height: 95px;
+}
+#input1-Form2{
+    height: auto;
+}
+#input3-Form2, #input4-Form2{
+    width: 47.5%;
+}
+.aceasi-linie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-input-Form2 textarea{
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+    max-height: 250px;
+    min-width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    outline: none;
+}
+.flex-checkbox-send{
+    display: flex;
+    width: 100%;
+    align-items: space-between;
+}
+.container-input-Form2 input[type='checkbox']{
+    width: 25px;
+    height: 25px;
+    accent-color: #0D1988;
+}
+.checkbox-box{
+    display: flex;
+    padding: 5px 0;
+}
+.checkbox-form2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox-form2 p{
+    padding: 0 10px;
+}
+.checkbox-title{
+    padding-bottom: 10px;
+}
+@container (max-width: 450px) {
+    .aceasi-linie{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #input3-Form2, #input4-Form2{
+        width: 100%;
+    }
+    .flex-checkbox-send{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,30 @@
+.Acordeon{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+}
+.item{
+    background: #e6d2a8;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    
+}
+.title{
+    color:#85662b;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.content{
+    color:#8b7f75;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(.67,.38,.3,.93);
+}
+
+.content.show{
+    height: 150px;
+    transition: all 0.5s cubic-bezier(.67,.38,.3,.93);
+}

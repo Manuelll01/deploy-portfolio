@@ -1,0 +1,70 @@
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+/*p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
+  background-color: rgb(138, 202, 35);
+}*/
+
+.home, .reports, .products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.App3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+
+.product-card-1-app{
+  display: flex;
+}     
+
+
+
+
+          /*toate fonturiile custom le pun in folderul App.css*/
+@font-face {
+  font-family: Righteous-Regular;
+  src: url(/public/fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: JosefinSans-Bold;
+  src: url(/public/fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: Anton-Regular;
+  src: url(/public/fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: Caveat-VariableFont_wght;
+  src: url(/public/fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Blinker-Bold;
+  src: url(/public/fonts/Blinker-Bold.ttf);
+}
+@font-face {
+  font-family: Lora;
+  src: url(/public/fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/public/fonts/RobotoSlab-VariableFont_wght.ttf);
+}

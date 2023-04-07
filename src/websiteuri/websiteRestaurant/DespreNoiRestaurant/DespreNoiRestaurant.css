@@ -1,0 +1,234 @@
+/*fontul este pus in folderul contact.css*/
+.Container-DespreNoi-Restaurant{
+    min-height: 100vh;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+}
+
+.container-footer3{
+    margin-top: auto;
+}
+
+
+.background-img-restaurant_3{
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+    object-fit: cover;
+    margin-bottom: 100px;/*1*/
+}
+.poza-Los-Pollos-Hermanos{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.50)), url(/src/imagini/LosPollosHermanos2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poza-Los-Pollos-Hermanos-2{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.50)), url(/src/imagini/LosPollosHermanos3.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    background-position-x: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caseta-poza-Los-Pollos-Hermanos{
+    width: 1400px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.caseta-poza-Los-Pollos-Hermanos h2{
+    text-align: center;
+}
+.caseta-poza-Los-Pollos-Hermanos-2{
+    width: 800px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.caseta-poza-Los-Pollos-Hermanos-2 h2{
+    width: auto;
+}
+.caseta-poza-Los-Pollos-Hermanos-2 p{
+    text-align: justify;
+}
+.element1-poza-Los-Pollos-Hermanos{
+    width: auto;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.element1-poza-Los-Pollos-Hermanos h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.element1-poza-Los-Pollos-Hermanos p{
+    padding-top: 15px;
+    font-weight: 600;
+}
+.element2-poza-Los-Pollos-Hermanos{
+    width: 600px;
+    padding: 25px;
+    background-color: rgba(24, 23, 23, 0.7);
+}
+.element2-poza-Los-Pollos-Hermanos p{
+    padding: 10px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+.content-caseta-poza-Los-Pollos-Hermanos-2 p{
+    padding: 10px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+.poza_interior_3{
+    width: 600px;
+    position: absolute;
+    bottom: -100px;/*1*/
+    left: 50%;
+    transform: translate(-50%);
+}
+.container-img-component-DespreNoi-Restaurant{
+    z-index: 1;
+}
+
+.Container-Content-DespreNoi-Restaurant{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.element{
+    padding: 25px;
+}
+.element-1-DespreNoi-Restaurant{
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.element-1-DespreNoi-Restaurant p{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 25px;
+}
+
+.caseta-element-1-DespreNoi-Restaurant-part2{
+    padding: 25px;
+    max-width: 600px;
+    background-color: rgba(20, 20, 20, 0.7);
+    color: white;
+    font-size: 1.25rem;
+    
+    font-weight: 600;
+    
+}
+.caseta-element-1-DespreNoi-Restaurant-part2 p{
+    padding: 25px 0;
+}
+.element-1-DespreNoi-Restaurant-part1{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.30)), url(/src/imagini/bur5.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    min-height: 400px;
+}
+.element-1-DespreNoi-Restaurant-part2{
+    background-color: white;
+    padding: 50px 25px;
+}
+.element-1-DespreNoi-Restaurant-part3{
+    background-color: white;
+    padding: 50px 25px;
+}
+
+.element-1-DespreNoi-Restaurant-part4{
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.30)), url(/src/imagini/bur3.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    min-height: 400px;
+}
+.element-1-DespreNoi-Restaurant-part5{
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.30)), url(/src/imagini/pui2.jpg) no-repeat;
+    background-color: rgb(0, 0, 0, 0.9);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    min-height: 400px;
+}
+.element-1-DespreNoi-Restaurant-part6{
+    background-color: white;
+    padding: 50px 25px;
+}
+
+@media (max-width:1000px){
+    .caseta-poza-Los-Pollos-Hermanos{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .element1-poza-Los-Pollos-Hermanos{
+        padding: 25px;
+    }
+    .poza-Los-Pollos-Hermanos, .poza-Los-Pollos-Hermanos-2{
+        height: auto;
+    }
+    .element-1-DespreNoi-Restaurant{
+        grid-template-columns: 1fr;
+    }
+    .element-1-DespreNoi-Restaurant-part2, .element-1-DespreNoi-Restaurant-part3, .element-1-DespreNoi-Restaurant-part6{
+        padding: 15px;
+    }
+    .element-1-DespreNoi-Restaurant-part2 p, .element-1-DespreNoi-Restaurant-part3 p, .element-1-DespreNoi-Restaurant-part6 p{
+        padding: 15px;
+    }
+    .element-1-DespreNoi-Restaurant-part4, .element-1-DespreNoi-Restaurant-part5{
+        background-position-x: center;
+
+    }
+    .element-1-DespreNoi-Restaurant-part1 {
+        background-position: center;
+    }
+}
+@media (max-width:800px){
+    .caseta-poza-Los-Pollos-Hermanos-2{
+        width: 100%;
+        padding: 20px;
+    }
+    .caseta-poza-Los-Pollos-Hermanos-2 h2{
+        text-align: center;
+    }
+}
+@media (max-width:600px) {
+    .element2-poza-Los-Pollos-Hermanos, .caseta-poza-Los-Pollos-Hermanos-2{
+        width: 100%;
+        padding: 20px;
+    }
+}

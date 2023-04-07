@@ -1,0 +1,54 @@
+
+.container-grid-despre-noi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem #c4c1c1;
+    background-color: white;
+    
+}
+
+.element-1{
+    padding-right: 6rem;
+    padding: 3rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    background-color: rgb(96, 168, 96);
+    color: white;
+    line-height: 2rem; /*!!!*/
+    font-weight: 600;
+}
+
+.element-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.25rem;
+    position: relative;
+}
+.element-2 h4{
+    color: rgb(57, 110, 253);
+}
+
+.element-2 > *{ /*asta inseamna selectarea all children de la .element-2*/
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+@media (max-width: 960px) {
+    .container-grid-despre-noi{
+        display: block;
+        width: 100%;
+    }
+    .element-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,91 @@
+/*fontul este pus in folderul contact.css*/
+
+
+
+.Container-Cariera-Restaurant{
+    min-height: 100vh;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+}
+
+.container-footer3{
+    margin-top: auto;
+}
+.Container-Content-Cariera-Restaurant{
+    width: 1000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.background-img-restaurant-cariera{
+    height: 500px;
+    width: 100%;
+    background-image: url(/src/imagini/background3.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+.Container-Scris-continut-Restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+.Container-Scris-continut-Restaurant h1{
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.Container-Scris-continut-Restaurant p{
+    font-weight: 600;
+}
+
+.aplica-aici-Cariera-Restaurant a{
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: rgb(192, 8, 8);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.aplica-aici-Cariera-Restaurant{
+    padding: 15px;
+    text-align: center;
+}
+.aplica-aici-Cariera-Restaurant a:hover{
+    background-color: rgb(167, 7, 7);
+}
+.containet-img-gallery-props-cariera-restaurant{
+    padding: 15px;
+}
+.Container-CasetaInformatiiLarga1-Cariera-Restaurant{
+    padding: 15px;
+}
+.Container-CasetaInformatiiLarga1-Cariera-Restaurant{
+    width: 100vw;
+    padding: 0px;
+}
+@media (max-width: 1000px) {
+    .Container-Content-Cariera-Restaurant{
+        width: 100%;
+        padding: 15px;
+        padding-top: 0px;
+    }
+    .Container-Scris-continut-Restaurant{
+        padding: 15px 0;
+    }
+    .containet-img-gallery-props-cariera-restaurant{
+        padding: 15px 0;
+    }
+    .Container-CasetaInformatiiLarga1-Cariera-Restaurant{
+        padding: 15px 0;
+    }
+}

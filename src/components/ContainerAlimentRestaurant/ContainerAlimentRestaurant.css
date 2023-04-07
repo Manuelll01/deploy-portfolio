@@ -1,0 +1,120 @@
+
+
+
+
+
+
+.container-ContainerAlimentRestaurant{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0.5rem 0.75rem 1rem 0.5rem #9e9d9d;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    max-width: 500px;
+}
+.continut-ContainerAlimentRestaurant{
+    position: relative;
+    padding: 10px 10px 0 10px;
+    max-height: 300px;
+    min-width: 150px;
+}
+.img-ContainerAlimentRestaurant{
+    height: auto;
+    z-index: 2;
+}
+.img-ContainerAlimentRestaurant img{
+    display: block;/*fara asta imi adauga o margine mica la divul in care era imaginea, ori cat de mare sau mica ar fi imaginea*/
+    width: 200px;
+    aspect-ratio: 3/3;
+    object-fit: cover;
+    z-index: 2;
+    object-position: center;/*e center by default, am trecut sa imi ramana model pt cum modific pozitia imaginii atunci cand imaginea nu este background*/
+}
+.img-ContainerAlimentRestaurant img:hover{
+    height: auto;
+}
+
+
+.titlu-ContainerAlimentRestaurant{
+    display: flex;
+    line-height: 1.5rem;
+    justify-content: space-between;
+    width: calc(15vw - 20px);/*din cauza faptului ca content are overflow hidden scrisul din dreapta ar fi fost ascuns avand in vedere ca width-ul
+                            automat este prea mare asa ca a trebuit sa dau width content-container - padding*/
+    z-index: 1;
+
+    display: block;
+    width: auto;
+    display: inline;
+}
+.titlu-ContainerAlimentRestaurant h2{
+    display: block;
+    width: auto;
+}
+
+.cantitate-ContainerAlimentRestaurant{
+    position: absolute;
+    right: 210px;
+    bottom: 5px;
+}
+.cantitate-ContainerAlimentRestaurant h4{
+    display: inline;
+}
+.titlu-si-descriere-ContainerAlimentRestaurant{
+    display: inline-block;
+    
+}
+
+.descriere-ContainerAlimentRestaurant{
+    color: #9e9d9d;
+    margin-top: 10px;
+    
+}
+.descriere-ContainerAlimentRestaurant p{/*!!!!! FOARTE IMPORTRANT !!!!!*/
+    max-height: calc(16px * 4 + 1px);/*4 linii de 16px, daca am mai mult e ascuns*/
+    line-height: 16px;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+.pret-ContainerAlimentRestaurant{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.pret-ContainerAlimentRestaurant h4{
+    height: auto;
+}
+
+.buton-ContainerAlimentRestaurant{
+    height: auto;
+}
+.buton-ContainerAlimentRestaurant a{
+    height: auto;
+}
+.buton-ContainerAlimentRestaurant a:hover{
+    height: auto;
+}
+
+@media (max-width:900px) {
+    .descriere-ContainerAlimentRestaurant{
+        opacity: 0;
+    }
+    .titlu-si-cantitate-ContainerAlimentRestaurant{
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width:425px){
+    .container-ContainerAlimentRestaurant{
+        transform: scale(0.85);
+    }
+}

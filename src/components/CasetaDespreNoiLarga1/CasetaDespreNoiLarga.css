@@ -1,0 +1,59 @@
+.container-caseta-despre-noi-larga{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.60)), url(/src/imagini/block2.jpg) no-repeat;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    background-attachment: fixed;/*!!!!!!!!!! cu asta setez pozitia imaginii de fundal*/
+    background-position: center;
+    
+}
+
+
+
+.titlu{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.continut{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    /*(!asta era pt cand aveam display flex aici si inca trei div-uri separate care erau cele 3 coloane pe care le-am sters!)
+    daca nu puneam width 100% nu se vedea space aroun-ul datorita faptului ca am pus display: flex; flex-direction: column; si align-items: center;
+     la .container-caseta-despre-noi-larga*/
+}
+
+
+.patrat-continut{
+    display: flex;
+    padding: 30px 0;/*am pus padding si aici si la .container-caseta-despre-noi-larga ca sas e combine ultimul padding de la baza de aici cu cel
+    de la baza containerului si lafel si sus*/
+    align-items: center;
+}
+.patrat-continut-1{
+    font-size: 3rem;
+    padding-right: 1rem;
+    margin-left: 2rem;
+}
+
+.patrat-continut-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 1200px) {
+    .continut{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 920px) {
+    .continut{
+        grid-template-columns: 70%;
+    }
+}

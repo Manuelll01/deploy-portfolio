@@ -1,0 +1,172 @@
+.Apartament1CamerePopup-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.caseta-informatii-si-poza-apartament{
+    width: 100%;
+    display: flex;
+}
+.informatii{
+    width: 50%;
+}
+.poza-apartament-popup{
+    width: 70%;
+}
+.poza-apartament-popup .img-popup1{
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+.x-mp{
+    margin-bottom: 1rem;
+    
+}
+
+.x-mp h3, .mp{
+    display: inline;
+}
+
+.mp > *{
+    display: inline;
+    font-size: 1.25rem;
+}
+
+.mp2{
+    position: relative;
+    bottom: 5px;
+    font-size: 12px;
+}
+.x-mp h3{
+    font-size: 4rem;
+    margin-right: 1.5rem;
+}
+.pret{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}  
+.spatiu{
+    margin-top: 1.5rem;
+}
+.lista{
+    list-style: square;
+}
+
+
+.poze-grid-apartament-popup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.coloana img{
+    max-width: 100%;
+    width: 400px;
+    aspect-ratio: 3/2;
+}
+
+
+
+.footer1{
+    width: 100%;
+}
+
+.contact-form-si-alte-informatii-popup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 15px;
+}
+
+.contact-form-popup{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    padding: 15px;
+}
+
+.alte-informatii{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+
+.celula{
+    padding: 15px;
+}
+.celula-titlu-popup{
+    padding: 15px;
+    background-color: rgb(24, 75, 185);
+    color: white;
+    font-size: 1.25rem;
+}
+.nota{
+    padding: 15px;
+}
+
+@media (max-width: 960px) {
+    .caseta-informatii-si-poza-apartament{
+        flex-direction: column;
+    }
+    .poza-apartament-popup{
+        width: 100%;
+    }
+    .poza-apartament-popup .img-popup1{
+        
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
+    .informatii{
+        width: 100%;
+    }
+    .poze-grid-apartament-popup{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contact-form-si-alte-informatii-popup{
+        grid-template-columns: 1fr;
+    }
+    .contact-form-popup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 15px;
+    }
+    @media(max-width:580px){
+        .celula-titlu-popup{
+            padding: 10px;
+            background-color: rgb(24, 75, 185);
+            color: white;
+            font-size: 1.25rem;
+        }
+        .contact-form-si-alte-informatii-popup{
+            padding: 0;
+        }
+        .lista{
+            padding-left: 15px;
+        }
+    }
+}
+@media (max-width: 500px){
+    .poze-grid-apartament-popup{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .alte-informatii-plus-nota{
+        max-width: 350px;
+    }
+    
+}

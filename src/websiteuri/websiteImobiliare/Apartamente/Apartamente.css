@@ -1,0 +1,55 @@
+.container-apartamente{
+    max-width: 100vw;
+    overflow: hidden;
+}
+.container-apartamente * :not(i){
+    font-family: Lora;
+}
+.img1-container{
+    width: 100%;
+    height: 10rem;/*1*/
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(/src/imagini/img_fundal_imobiliare_2.jpg);
+    object-fit: cover;
+}
+
+    
+   /* aspect-ratio: 16/9; --> asta este pentru imagini*/
+    
+
+
+.container-caseta-display{
+    margin: 0 2rem;
+    margin-top: 9.5rem;/*1*/
+}
+
+.container-apartamente-2{/*ultimele doua clase stiluite in css au scopul de a pune footer-ul jos,
+    chiar daca nu e nevoie pe pagina asta vreau sa am ca model*/
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.footer-1{
+    margin-top: auto;
+}
+
+.filtru{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 600px){
+    .container-caseta-display{
+        display: none;
+    }
+    .productslider-apartamente{
+        /*nu trev nimic pt ca oricum este facut mediaul din componentul productslider*/
+        margin-top: 10rem;/*1*/
+    }
+}

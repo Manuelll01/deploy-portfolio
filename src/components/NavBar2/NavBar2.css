@@ -1,0 +1,66 @@
+.navbar{
+    display: grid;/*parca nu mergea justify-content la .navlinks cum voiam eu daca aveam display: flex; aici*/
+    grid-template-columns: 2fr 6fr;
+    grid-column-gap: 1vw;
+    background-color: #7CC6FE;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    
+}
+
+.navlinks{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    list-style: none;
+}
+.logo{
+    display: flex;
+    left: 0;
+    margin-left: 5vw;
+    color: #08090A;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.navlinks li a{
+    padding: 2vw;
+    border-radius: 5px;
+}
+.link a{
+    color: #08090A;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 2vw;
+    display: block;/*!!! este important pt momentul cand devine ecranul mai mic si scrisul se pune pe doua randuri
+            paddingul albastru deschis se va vedea uniform la hover deoarece scrisul ocupa spatiu pana la capatul randului*/
+}
+
+.link a:hover{
+    background-color: #5DFDCB;
+}
+.nume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*poate imi pozitionez linkurile alea 4 cu 
+position: absolute;
+poate si width: auto; (nu stiu sigur)
+left:0;(ca sa pun inceputul marginii listei la sfarsitul ectanului )
+transform:translate(-100%); (ca sa pun sfarsitul linkurilor la sfarsitul ecranului)
+
+
+nu e nevoied de ultimele doua, pot direct sa pun  right:0;
+
+SAU CV DE GENUL*/
+

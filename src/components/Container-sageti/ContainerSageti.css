@@ -1,0 +1,61 @@
+.container-sageti{
+    display: flex;
+    justify-content: center;
+}
+.left-arrow{
+    left: 30%;
+    transition: 0.25s;
+}
+.left-arrow a{
+    display: block;
+    color: white;
+    padding: 25px;
+    background-color: black;
+    font-size: 1.5rem;
+}
+.left-arrow a:hover{
+    background-color: rgb(192, 8, 8);
+    transition: 0.25s;
+}
+
+
+.right-arrow{
+    right: 30%;
+    transition: 0.25s;
+}
+.right-arrow a{
+    display: block;
+    color: white;
+    padding: 25px;
+    background-color: black;
+    font-size: 1.5rem;
+}
+.right-arrow a:hover{
+    background-color: rgb(192, 8, 8);
+    transition: 0.25s;
+}
+
+
+.container-sageti-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 10px 20px;
+    
+    line-height: 50px;
+}
+.container-sageti-content p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+    .right-arrow a{
+        padding: 15px;
+    }
+    .left-arrow a{
+        padding: 15px;
+    }
+}

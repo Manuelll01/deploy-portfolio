@@ -1,0 +1,74 @@
+.Popup2-container{
+    display: flex;
+}
+.popup2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.popup2-inner{
+    position: fixed;
+    left: 50%;
+    top: 10vh;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    max-height: 85%;/*daca nu puneam height era auto by default si toate elementele pur si simplu se duceau in jos(chiar daca
+                     ele nu se vedeau de la position fixed) fara sa fie nevoie de scroll*/
+    overflow-y: scroll;
+    z-index: 10;
+
+}
+.popup2-inner::-webkit-scrollbar{
+    width: 5px;
+  }
+.popup2-inner::-webkit-scrollbar-thumb{
+    background-color: #c0bfbf;
+    border-radius: 100vw;
+    width: 80%;
+}
+.popup2-inner::-webkit-scrollbar-thumb:hover{
+    background-color: #888;
+}
+.popup2-inner::-webkit-scrollbar-track{
+    
+    background-color: transparent;
+}
+
+
+.popup2-inner .close-btn-2{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(78, 78, 78);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 450px){
+    .popup2-inner{
+        max-width: 95%;
+        
+    }
+}

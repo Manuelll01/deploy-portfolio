@@ -1,0 +1,20 @@
+.Container-IconitaContact2{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    color: rgb(61, 60, 60);
+}
+
+.iconita-informatii2{
+    display: flex;
+    align-items: center;/*foarte important sa le pui pe astea doua sa centrezi inconita in mijlocul divului, altfel o sa apara iconita inafara cercului*/
+    justify-content: center;/*foarte important sa le pui pe astea doua sa centrezi inconita in mijlocul divului, altfel o sa apara iconita inafara cercului*/
+    
+    margin-right: 2rem;
+    font-size: 22px;
+}
+.text-infromatii2{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}

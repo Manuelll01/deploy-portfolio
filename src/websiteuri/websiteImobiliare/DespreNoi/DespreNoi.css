@@ -1,0 +1,106 @@
+
+
+.despre-noi-container{
+    display: flex;
+    flex-direction: column;
+}
+.despre-noi-container * :not(i){
+    font-family: Lora;
+}
+/*.despre-noi-container * :not(.nav-bar-3 *, i){
+    font-family: Roboto;
+}    de tinut minte, cum sa schimb fontul paginii fara sa schimb fontul nav-bar-ului
+    (.nav-bar-3 este numele div-ului dinauntrul componentului)*/
+.container-img{
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(/src/imagini/img_fundal_imobiliare_2.jpg);
+    object-fit: cover;
+}
+
+.element1-non-navbar{
+    margin-top: 3rem;
+}
+
+.container-mare-CasetaScris-DespreNoi{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+    margin-bottom: 5rem;
+}
+
+
+.container-mic-CasetaScris-DespreNoi{
+    width: 80%;
+
+    opacity: 0;
+    position: relative;
+    top: 50px;
+}
+
+.Container-CasetaDespreNoiInformatii-Imobiliare{
+    display: flex;
+    justify-content: center;
+
+    opacity: 0;
+    position: relative;
+    top: 50px;
+
+    
+}
+
+.Container-CasetaDespreNoiLarga-Imobiliare{
+    margin: 2rem 0;
+}
+
+.Container-mare-BaraCountUpAnimation-DespreNoi{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.Container-mic-BaraCountUpAnimation-DespreNoi{
+    width: 80%;
+}
+
+
+
+.continut-despre-noi{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.Footer2{
+    margin-top: auto;
+}
+
+.Container-DespreNoiDescriere{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    opacity: 0;
+    position: relative;
+    top: 50px;
+}
+
+
+
+.vizibil3{
+    opacity: 1;
+    transition: 1s;
+    top: 0;
+}
+

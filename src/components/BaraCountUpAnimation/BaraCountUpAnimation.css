@@ -1,0 +1,70 @@
+.container-BaraCountUpAnimation{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.container-cutie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.container-BaraCountUpAnimation .container-cutie:hover h3{
+    color: black;
+    transition: 0.25s;
+}
+
+.container-BaraCountUpAnimation .container-cutie:hover .cerc{
+    background-color: rgb(16, 104, 236);
+    transition: 0.25s;
+}
+
+.container-BaraCountUpAnimation .container-cutie:hover .cerc i{
+    color: white;
+    transition: 0.25s;
+}
+
+.cerc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    border: 2px solid rgb(16, 104, 236);
+    margin-bottom: 1rem;
+    border-radius: 100px;
+    transition: 0.25s;
+}
+
+.cerc i{
+    font-size: 3rem;
+    color: rgb(16, 104, 236);
+    transition: 0.25s;
+}
+
+.container-cutie p{
+    text-align: center;/*!!!*/
+}
+
+.container-BaraCountUpAnimation .container-cutie h3{
+    font-size: 2rem;
+    color: rgb(16, 104, 236);
+    margin-bottom: 0.5rem;
+    transition: 0.25s;
+}
+
+@media (max-width: 1250px) {
+    .container-BaraCountUpAnimation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;/*justify items in loc de justify content este pt a aranja  elementul inauntrul cutiei ci nu sa aranjezi cutia in sine*/
+        align-items: center;/**/
+    }
+    .container-cutie{
+        margin-top: 1rem;
+    }
+
+    
+}

@@ -1,0 +1,82 @@
+/*fontul este pus in folderul contact.css*/
+.container-footer3{
+    margin-top: auto;
+}
+.Container-Livrare-Restaurant{
+    min-height: 100vh;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+}
+.background-img-restaurant-livrare{
+    height: 500px;
+    width: 100%;
+    background-image: url(/src/imagini/background3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-img-restaurant_4{
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/src/imagini/FastFoodWallpaper.jpg);
+    object-fit: cover;
+    margin-bottom: 100px;/*1*/
+}
+.poza_interior_4{
+    width: 600px;
+    position: absolute;
+    bottom: -100px;/*1*/
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.Container-Content-Livrare-Restaurant{
+    width: 800px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-input{
+    position: relative;
+    display: flex;
+    width: 600px;
+}
+.container-input input{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.container-input button{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: none;
+    background-color: rgb(192, 8, 8);
+    color: white;
+    border-radius: 3px;
+}
+.container-input button:active{
+    background-color: rgb(167, 7, 7);
+}
+
+@media (max-width: 800px) {
+    .Container-Content-Livrare-Restaurant{
+        width: 100%;
+        padding: 15px;
+        padding-top: 0px;
+    }
+    .container-input{
+        top: 15px;
+    }
+    
+}

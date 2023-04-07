@@ -1,0 +1,58 @@
+.Popup-container{
+    display: flex;
+}
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+
+.popup-inner{
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    padding: 32px;
+    width: 100%;
+    max-width: 75%;
+    background-color: white;
+    overflow-y: scroll;
+    max-height: 85%;/*daca nu puneam height era auto by default si toate elementele pur si simplu se duceau in jos(chiar daca
+                     ele nu se vedeau de la position fixed) fara sa fie nevoie de scroll*/
+                     
+    z-index: 20;
+
+}
+
+.popup-inner .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+@media (max-width: 450px){
+    .popup-inner{
+        max-width: 95%;
+        
+    }
+}
+@media (max-width: 580px){
+    .popup-inner{
+        padding: 16px;
+        
+    }
+}

@@ -1,0 +1,64 @@
+.background-img-restaurant{
+    height: 500px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(/src/imagini/background3.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;/*important*/
+    justify-content: center;
+    overflow: visible;
+    padding-top: 75px;/*1*/
+    margin-bottom: 75px;/*1*/
+}
+.poza_interior_1{
+    width: 800px;
+    aspect-ratio: 8/5;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0rem 0rem 0.5rem 0.25rem #302f2f;
+
+}
+@media (max-width: 800px) {
+    .background-img-restaurant{
+        width: 100%;
+        height: auto;/*1.8 pt ca aspect ratio la poza e 8/5 si am vrut sa se micsoreze inaltimea backgroundului proportional cu inaltimea
+                                imaginii din interior  avand in vedere ca width-ul se micsoreaza odata cu micsorarea width-ului paginii si 
+                                height-ul lafel avand aspect-ratio, am vrut ca height-ul backgroundului sa se micsoreze tot proportional cu
+                                aspect ratio-ul respectiv*/
+        margin-bottom: 0px;/*1*/
+    }
+    .poza_interior_1{
+        width: 100%;
+        aspect-ratio: 8/5;
+        padding: 15px;
+        box-shadow: 0rem 0rem 0rem 0rem #9e9d9d;
+    }
+}
+@media (max-width: 600px){
+    .background-img-restaurant{
+        width: 100%;
+        margin-bottom: 0px;
+        padding-top: 25px;
+    }
+    .poza_interior_1{
+        width: 100%;
+        aspect-ratio: 6/5;
+        padding: 15px;
+    }
+}
+@media (max-width: 400px){
+    .background-img-restaurant{
+        width: 100%;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+    .poza_interior_1{
+        width: 100%;
+        aspect-ratio: 5/5;
+        padding: 15px;
+    }
+}
