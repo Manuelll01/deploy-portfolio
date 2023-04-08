@@ -99,7 +99,7 @@ export const Aplicatie5 = () =>{
     <Router basename='/deploy-portfolio'>
     
       <Routes>
-        <Route path='/' element={<PrimaPagina></PrimaPagina>}></Route>
+        <Route path='/deploy-portfolio' element={<PrimaPagina></PrimaPagina>}></Route>
         <Route path='/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
           <Route path='/Apartamente' element={<Apartamente></Apartamente>}></Route>
           <Route path='/Contacte' element={<Contacte></Contacte>}></Route>
