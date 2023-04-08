@@ -27,7 +27,6 @@ import { Pui } from './websiteuri/websiteRestaurant/Meniu/Pui/Pui';
 import { Sosuri } from './websiteuri/websiteRestaurant/Meniu/Sosuri/Sosuri';
 import "./primapagina.css";
 import {FaReact, FaHtml5, FaJs, FaCss3} from "react-icons/fa"
-import { SideBarSlide } from "../../components/SideBarSlide/SideBarSlide";
 import { DespreMine } from "./DespreMinePrimaPagina/DespreMinePrimaPagina";
 import { Contacteazama } from "./Contacteazama/Contacteazama";
 import { ScrollUpNavBar } from "../../components/ScrollUpNavBar/ScrollUpNavBar";
