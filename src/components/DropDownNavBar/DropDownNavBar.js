@@ -51,19 +51,19 @@ export const DropDownNavBar = (props) => { /* asta o sa fie folosit in siteul ma
                 </ul>
                 <ul className="container-butoane-dreapta">
                     <li className="meniu">
-                        <Link to='/deploy-portfolio/Versiune3/meniu.restaurant'>meniu <i class="fa-solid fa-arrow-down"></i></Link>
+                        <Link to='meniu.restaurant'>meniu <i class="fa-solid fa-arrow-down"></i></Link>
                         <div className="meniu-2">
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.burgers'>burgers</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.pui'>pui</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.sosuri'>sosuri</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.bauturi'>bauturi</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.deserturi'>deserturi</Link></li>
+                            <li><Link to='meniu.restaurant.burgers'>burgers</Link></li>
+                            <li><Link to='meniu.restaurant.pui'>pui</Link></li>
+                            <li><Link to='meniu.restaurant.sosuri'>sosuri</Link></li>
+                            <li><Link to='meniu.restaurant.bauturi'>bauturi</Link></li>
+                            <li><Link to='meniu.restaurant.deserturi'>deserturi</Link></li>
                         </div>
                     </li>
-                    <li ref={rightButton}><Link to='/deploy-portfolio/Versiune3/despreNoi.restaurant'>Despre Noi</Link></li>
-                    <li><Link to='/deploy-portfolio/Versiune3/livrare.restaurant'>Livrare</Link></li>
-                    <li><Link to='/deploy-portfolio/Versiune3/contact.restaurant'>Contact</Link></li>
-                    <li><Link to='/deploy-portfolio/Versiune3/cariera.restaurant/'>Carieră</Link></li>
+                    <li ref={rightButton}><Link to='despreNoi.restaurant'>Despre Noi</Link></li>
+                    <li><Link to='livrare.restaurant'>Livrare</Link></li>
+                    <li><Link to='contact.restaurant'>Contact</Link></li>
+                    <li><Link to='cariera.restaurant/'>Carieră</Link></li>
                 </ul>
                 <div   className="responsive-icon-drop-down-nav-bar"><div className="div-interior-drop-down-nav-bar-icon" onClick={clickhandler}><i className={clicked ? 'fas fa-times': 'fas fa-bars'}></i></div></div>
                 
@@ -73,17 +73,17 @@ export const DropDownNavBar = (props) => { /* asta o sa fie folosit in siteul ma
                         <li className="meniu-sidebar"><Link to='' onClick={sideClickhandler}><i  class={sideCliced ? "fa-solid fa-angle-down" : "fa-solid fa-angle-right"}></i>meniu</Link></li>
                     
                         <div className={sideCliced ? "meniu-2-sidebar activ2": "meniu-2-sidebar"}>
-                        <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant'><i class="fa-solid fa-angles-right"></i>Toate produsele</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.burgers'><i class="fa-solid fa-angles-right"></i>Burgers</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.pui'><i class="fa-solid fa-angles-right"></i>Pui</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.sosuri'><i class="fa-solid fa-angles-right"></i>Sosuri</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.bauturi'><i class="fa-solid fa-angles-right"></i>Bauturi</Link></li>
-                            <li><Link to='/deploy-portfolio/Versiune3/meniu.restaurant.deserturi'><i class="fa-solid fa-angles-right"></i>Deserturi</Link></li>
+                        <li><Link to='meniu.restaurant'><i class="fa-solid fa-angles-right"></i>Toate produsele</Link></li>
+                            <li><Link to='meniu.restaurant.burgers'><i class="fa-solid fa-angles-right"></i>Burgers</Link></li>
+                            <li><Link to='meniu.restaurant.pui'><i class="fa-solid fa-angles-right"></i>Pui</Link></li>
+                            <li><Link to='meniu.restaurant.sosuri'><i class="fa-solid fa-angles-right"></i>Sosuri</Link></li>
+                            <li><Link to='meniu.restaurant.bauturi'><i class="fa-solid fa-angles-right"></i>Bauturi</Link></li>
+                            <li><Link to='meniu.restaurant.deserturi'><i class="fa-solid fa-angles-right"></i>Deserturi</Link></li>
                         </div>
-                        <li><Link to='/deploy-portfolio/Versiune3/despreNoi.restaurant'>Despre Noi</Link></li>
-                        <li><Link to='/deploy-portfolio/Versiune3/livrare.restaurant'>Livrare</Link></li>
-                        <li><Link to='/deploy-portfolio/Versiune3/contact.restaurant'>Contact</Link></li>
-                        <li><Link to='/deploy-portfolio/Versiune3/cariera.restaurant/'>Carieră</Link></li>
+                        <li><Link to='despreNoi.restaurant'>Despre Noi</Link></li>
+                        <li><Link to='livrare.restaurant'>Livrare</Link></li>
+                        <li><Link to='contact.restaurant'>Contact</Link></li>
+                        <li><Link to='cariera.restaurant/'>Carieră</Link></li>
                     </ul>
                 </div>
         </div>
