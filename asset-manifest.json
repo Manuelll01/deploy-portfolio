@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/deploy-portfolio/static/css/main.79cacd44.css",
-    "main.js": "/deploy-portfolio/static/js/main.6cbccbdf.js",
+    "main.js": "/deploy-portfolio/static/js/main.e05186d2.js",
     "static/media/block2.jpg": "/deploy-portfolio/static/media/block2.fa3e6ed4942cf152ac78.jpg",
     "static/media/img_fundal_imobiliare_2.jpg": "/deploy-portfolio/static/media/img_fundal_imobiliare_2.40830e260a1a45252edb.jpg",
     "static/media/Caveat-VariableFont_wght.ttf": "/deploy-portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
@@ -23,10 +23,10 @@
     "static/media/wave-haikei3.svg": "/deploy-portfolio/static/media/wave-haikei3.5aa5be9ad5b258e3495e.svg",
     "static/media/wave-haikei2.svg": "/deploy-portfolio/static/media/wave-haikei2.04dfc97ae91936d5d7f0.svg",
     "main.79cacd44.css.map": "/deploy-portfolio/static/css/main.79cacd44.css.map",
-    "main.6cbccbdf.js.map": "/deploy-portfolio/static/js/main.6cbccbdf.js.map"
+    "main.e05186d2.js.map": "/deploy-portfolio/static/js/main.e05186d2.js.map"
   },
   "entrypoints": [
     "static/css/main.79cacd44.css",
-    "static/js/main.6cbccbdf.js"
+    "static/js/main.e05186d2.js"
   ]
 }
