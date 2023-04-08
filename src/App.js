@@ -96,26 +96,26 @@ export const Aplicatie5 = () =>{
   return(
     <>
     
-    <Router>
+    <Router basename='/deploy-portfolio'>
     
       <Routes>
-        <Route path='/deploy-portfolio' element={<PrimaPagina></PrimaPagina>}></Route>
-        <Route path='/deploy-portfolio/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
+        <Route path='/' element={<PrimaPagina></PrimaPagina>}></Route>
+        <Route path='/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
           <Route path='/Apartamente' element={<Apartamente></Apartamente>}></Route>
           <Route path='/Contacte' element={<Contacte></Contacte>}></Route>
           <Route path='/DespreNoi' element={<DespreNoi></DespreNoi>}></Route>
           <Route path='/Galerie' element={<Galerie></Galerie>}></Route>
-        <Route path='/deploy-portfolio/Versiune3' element={<WebsiteRestaurant></WebsiteRestaurant>}></Route>
-          <Route path='/deploy-portfolio/Versiune3/cariera.restaurant/' element={<Cariera></Cariera>}></Route>
-          <Route path='/deploy-portfolio/Versiune3/contact.restaurant' element={<ContactRestaurant></ContactRestaurant>}></Route>
-          <Route path='/deploy-portfolio/Versiune3/despreNoi.restaurant' element={<DespreNoiRestaurant></DespreNoiRestaurant>}></Route>
-          <Route path='/deploy-portfolio/Versiune3/livrare.restaurant' element={<Livrare></Livrare>}></Route>
-          <Route path='/deploy-portfolio/Versiune3/meniu.restaurant' element={<Meniu></Meniu>}></Route>
-            <Route path='/deploy-portfolio/Versiune3/meniu.restaurant.bauturi' element={<Bauturi></Bauturi>}></Route>
-            <Route path='/deploy-portfolio/Versiune3/meniu.restaurant.burgers' element={<Burgers></Burgers>}></Route>
-            <Route path='/deploy-portfolio/Versiune3/meniu.restaurant.deserturi' element={<Deserturi></Deserturi>}></Route>
-            <Route path='/deploy-portfolio/Versiune3/meniu.restaurant.pui' element={<Pui></Pui>}></Route>
-            <Route path='/deploy-portfolio/Versiune3/meniu.restaurant.sosuri' element={<Sosuri></Sosuri>}></Route>
+        <Route path='/Versiune3' element={<WebsiteRestaurant></WebsiteRestaurant>}></Route>
+          <Route path='/Versiune3' element={<Cariera></Cariera>}></Route>
+          <Route path='/contact.restaurant' element={<ContactRestaurant></ContactRestaurant>}></Route>
+          <Route path='/despreNoi.restaurant' element={<DespreNoiRestaurant></DespreNoiRestaurant>}></Route>
+          <Route path='/livrare.restaurant' element={<Livrare></Livrare>}></Route>
+          <Route path='/meniu.restaurant' element={<Meniu></Meniu>}></Route>
+            <Route path='/meniu.restaurant.bauturi' element={<Bauturi></Bauturi>}></Route>
+            <Route path='/meniu.restaurant.burgers' element={<Burgers></Burgers>}></Route>
+            <Route path='/meniu.restaurant.deserturi' element={<Deserturi></Deserturi>}></Route>
+            <Route path='/meniu.restaurant.pui' element={<Pui></Pui>}></Route>
+            <Route path='/meniu.restaurant.sosuri' element={<Sosuri></Sosuri>}></Route>
       </Routes>
     </Router>
     
