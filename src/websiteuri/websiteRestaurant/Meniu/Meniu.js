@@ -16,7 +16,7 @@ export const Meniu = () => {
     return(
         <div className="container-continut-Restaurant">
             <div className="Container-Meniu-Restaurant">
-                <DropDownNavBar path1='/Versiune3' titlu1='Home'></DropDownNavBar>
+                <DropDownNavBar path1='/deploy-portfolio/Versiune3' titlu1='Home'></DropDownNavBar>
                 <BackgroundImgCuImgInterior src="./img/meniu.jpg"></BackgroundImgCuImgInterior>
                 <div className="Container-Content-Meniu-Restaurant">
                     <Link to='/meniu.restaurant.burgers' className="Container-Categorie-Meniu-Restaurant">

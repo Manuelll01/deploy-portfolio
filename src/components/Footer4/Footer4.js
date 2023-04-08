@@ -11,19 +11,19 @@ export const Footer4 = (props) => {
         })}
         const data = [
             { content: "Home",
-                to: "/",
+                to: "/deploy-portfolio/",
                 coordonate: props.a
         }, 
             { content: "Projects",
-                to: "/",
+                to: "/deploy-portfolio/",
                 coordonate: props.b
         }, 
             { content: "About me",
-            to: "/",
+            to: "/deploy-portfolio/",
             coordonate: props.c
         }, 
             { content: "Contact",
-                to: "/",
+                to: "/deploy-portfolio/",
                 coordonate: props.d
         }, ]
     return(
@@ -50,8 +50,8 @@ export const Footer4 = (props) => {
                     <h1>Projects</h1>
                 </div>  
                 <div className="Projects-footer4">
-                    <Link to='/Versiune3'>Fast Food Website</Link>
-                    <Link to='/Versiune2'>Real Estate Website</Link>
+                    <Link to='Versiune3'>Fast Food Website</Link>
+                    <Link to='Versiune2'>Real Estate Website</Link>
                 </div>
             </div>
 
