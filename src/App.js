@@ -106,7 +106,7 @@ export const Aplicatie5 = () =>{
           <Route path='/DespreNoi' element={<DespreNoi></DespreNoi>}></Route>
           <Route path='/Galerie' element={<Galerie></Galerie>}></Route>
         <Route path='/Versiune3' element={<WebsiteRestaurant></WebsiteRestaurant>}></Route>
-          <Route path='/Versiune3' element={<Cariera></Cariera>}></Route>
+          <Route path='/cariera.restaurant' element={<Cariera></Cariera>}></Route>
           <Route path='/contact.restaurant' element={<ContactRestaurant></ContactRestaurant>}></Route>
           <Route path='/despreNoi.restaurant' element={<DespreNoiRestaurant></DespreNoiRestaurant>}></Route>
           <Route path='/livrare.restaurant' element={<Livrare></Livrare>}></Route>

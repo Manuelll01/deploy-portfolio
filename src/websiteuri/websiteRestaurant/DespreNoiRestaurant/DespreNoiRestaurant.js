@@ -15,7 +15,7 @@ export const DespreNoiRestaurant = () => {
     return(
         <div className="container-continut-Restaurant">
             <div className="Container-DespreNoi-Restaurant">
-                <DropDownNavBar path1='/deploy-portfolio/Versiune3' titlu1='Home'></DropDownNavBar>
+                <DropDownNavBar path1='/Versiune3' titlu1='Home'></DropDownNavBar>
                 
                 
                 <div className="Container-Content-DespreNoi-Restaurant">

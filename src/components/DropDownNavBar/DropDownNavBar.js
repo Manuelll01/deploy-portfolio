@@ -60,7 +60,7 @@ export const DropDownNavBar = (props) => { /* asta o sa fie folosit in siteul ma
                             <li><Link to='/meniu.restaurant.deserturi'>deserturi</Link></li>
                         </div>
                     </li>
-                    <li ref={rightButton}><Link to='despreNoi.restaurant'>Despre Noi</Link></li>
+                    <li ref={rightButton}><Link to='/despreNoi.restaurant'>Despre Noi</Link></li>
                     <li><Link to='/livrare.restaurant'>Livrare</Link></li>
                     <li><Link to='/contact.restaurant'>Contact</Link></li>
                     <li><Link to='/cariera.restaurant'>Carieră</Link></li>

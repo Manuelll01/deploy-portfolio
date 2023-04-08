@@ -15,7 +15,7 @@ export const Livrare = () => {
     return(
         <div className="container-continut-Restaurant">
             <div className="Container-Livrare-Restaurant">
-                <DropDownNavBar path1='/deploy-portfolio/Versiune3' titlu1='Home'></DropDownNavBar>
+                <DropDownNavBar path1='/Versiune3' titlu1='Home'></DropDownNavBar>
                 <BackgroundImgCuImgInterior src='./img/livrare3.jpg'></BackgroundImgCuImgInterior>
                 <div className="Container-Content-Livrare-Restaurant">
                     <div className="container-input">
