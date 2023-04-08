@@ -25,15 +25,15 @@ import { Burgers } from './websiteuri/websiteRestaurant/Meniu/Burgers/Burgers';
 import { Deserturi } from './websiteuri/websiteRestaurant/Meniu/Deserturi/Deserturi';
 import { Pui } from './websiteuri/websiteRestaurant/Meniu/Pui/Pui';
 import { Sosuri } from './websiteuri/websiteRestaurant/Meniu/Sosuri/Sosuri';
-import "./primapagina.css";
+
+
+import React, {useState, useEffect, useRef} from "react";
 import {FaReact, FaHtml5, FaJs, FaCss3} from "react-icons/fa"
-import { DespreMine } from "./DespreMinePrimaPagina/DespreMinePrimaPagina";
-import { Contacteazama } from "./Contacteazama/Contacteazama";
-import { ScrollUpNavBar } from "../../components/ScrollUpNavBar/ScrollUpNavBar";
-import { CasetaMicaPozaPrezentareWebsite } from "../../components/CasetaMicaPozaPrezentareWebsite/CasetaMicaPozaPrezentareWebsite";
 import { Link } from "react-router-dom";
-import { Footer4 } from "../../components/Footer4/Footer4";
-import { Form2 } from "../../components/Form2/Form2";
+import { ScrollUpNavBar } from './components/ScrollUpNavBar/ScrollUpNavBar';
+import { CasetaMicaPozaPrezentareWebsite } from './components/CasetaMicaPozaPrezentareWebsite/CasetaMicaPozaPrezentareWebsite';
+import { Footer4 } from './components/Footer4/Footer4';
+import { Form2 } from './components/Form2/Form2';
 
 /*import img1 from '/.imagini/pui_prajit_1.jpg'*/
 
@@ -91,53 +91,60 @@ export const Aplicatie4 = () => {
 }
 
 export const Aplicatie5 = () =>{
+
+  
+
   const [variabilaNeschimbata, setVariabilaNeschimbata] = useState()
-    const boxRefA = useRef();
-    const boxRefB = useRef();
-    const boxRefC = useRef();
-    const boxRefD = useRef();
-    const [a, setA] = useState()
-    const [b, setB] = useState()
-    const [c, setC] = useState()
-    const [d, setD] = useState()
-    const getPosition = () => {
-        const a = boxRefA.current.offsetTop
-        const b = boxRefB.current.offsetTop
-        const c = boxRefC.current.offsetTop
-        const d = boxRefD.current.offsetTop
-        setA(a)
-        setB(b)
-        setC(c)
-        setD(d)
-    }
+  const boxRefA = useRef();
+  const boxRefB = useRef();
+  const boxRefC = useRef();
+  const boxRefD = useRef();
+  const [a, setA] = useState()
+  const [b, setB] = useState()
+  const [c, setC] = useState()
+  const [d, setD] = useState()
+  const getPosition = () => {
+      const a = boxRefA.current.offsetTop
+      const b = boxRefB.current.offsetTop
+      const c = boxRefC.current.offsetTop
+      const d = boxRefD.current.offsetTop
+      setA(a)
+      setB(b)
+      setC(c)
+      setD(d)
+  }
 
+  useEffect(() => {
+      getPosition();
+    }, []);
+
+  useEffect(() => {
+      window.addEventListener("resize", getPosition);
+    }, []);
+
+
+
+    const ScrollToElement = (element) => {
+      
+      window.scrollTo({
+          top: element,
+          behavior: "smooth"
+      })}
+
+  
     useEffect(() => {
-        getPosition();
-      }, []);
+      const ScrollUpPage = () => {
+          window.scrollTo(0, 0)
+      }
+      ScrollUpPage()
+  }, [variabilaNeschimbata])
 
-    useEffect(() => {
-        window.addEventListener("resize", getPosition);
-      }, []);
-
-
-
-      const ScrollToElement = (element) => {
-        
-        window.scrollTo({
-            top: element,
-            behavior: "smooth"
-        })}
-
-    
-      useEffect(() => {
-        const ScrollUpPage = () => {
-            window.scrollTo(0, 0)
-        }
-        ScrollUpPage()
-    }, [variabilaNeschimbata])
   return(
+    <>
+    
+    <Router>
     <div className="prima-pagina">
-        <ScrollUpNavBar a={a} b={b} c={c} d={d}></ScrollUpNavBar>
+    <ScrollUpNavBar a={a} b={b} c={c} d={d}></ScrollUpNavBar>
         <div className="Container-caseta-acasa" ref={boxRefA}>
             <div className="caseta-acasa-mare-grid">
                 <div  className="caseta-acasa-scris">
@@ -237,16 +244,31 @@ export const Aplicatie5 = () =>{
             </div>
             <div className="curve layer2"></div>
         </div>
-            
-            {/*
-                <SideBarSlide
-                Acasa = {<AcasaPrimaPagina></AcasaPrimaPagina>}
-                Proiecte = {<Proiecte></Proiecte>}
-                DespreMine = {<DespreMine></DespreMine>}
-                Contacteazama = {<Contacteazama></Contacteazama>}></SideBarSlide>
-    */}
-    <Footer4 a={a} b={b} c={c} d={d}></Footer4>
+        <Footer4 a={a} b={b} c={c} d={d}></Footer4>
     </div>
+      <Routes>
+        {/*<Route path='/' element={<PrimaPagina></PrimaPagina>}></Route>*/}
+        <Route path='/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
+          <Route path='/Apartamente' element={<Apartamente></Apartamente>}></Route>
+          <Route path='/Contacte' element={<Contacte></Contacte>}></Route>
+          <Route path='/DespreNoi' element={<DespreNoi></DespreNoi>}></Route>
+          <Route path='/Galerie' element={<Galerie></Galerie>}></Route>
+        <Route path='/Versiune3' element={<WebsiteRestaurant></WebsiteRestaurant>}></Route>
+          <Route path='/cariera.restaurant' element={<Cariera></Cariera>}></Route>
+          <Route path='/contact.restaurant' element={<ContactRestaurant></ContactRestaurant>}></Route>
+          <Route path='/despreNoi.restaurant' element={<DespreNoiRestaurant></DespreNoiRestaurant>}></Route>
+          <Route path='/livrare.restaurant' element={<Livrare></Livrare>}></Route>
+          <Route path='/meniu.restaurant' element={<Meniu></Meniu>}></Route>
+            <Route path='/meniu.restaurant.bauturi' element={<Bauturi></Bauturi>}></Route>
+            <Route path='/meniu.restaurant.burgers' element={<Burgers></Burgers>}></Route>
+            <Route path='/meniu.restaurant.deserturi' element={<Deserturi></Deserturi>}></Route>
+            <Route path='/meniu.restaurant.pui' element={<Pui></Pui>}></Route>
+            <Route path='/meniu.restaurant.sosuri' element={<Sosuri></Sosuri>}></Route>
+      </Routes>
+    </Router>
+    
+    
+    </>
   )
 }
 
@@ -287,6 +309,5 @@ export const ProductCard1App = () => {
 
 
 export default App;
-
 
 
