@@ -11,7 +11,7 @@ export const WebsiteImobiliare = () => {
         
             <NavBar3 className="NavBar3"
                     titlu={'Acasă'}
-                    path1="/"></NavBar3>
+                    path1="/deploy-portfolio"></NavBar3>
 
 
 
