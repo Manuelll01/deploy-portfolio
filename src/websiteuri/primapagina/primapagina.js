@@ -114,13 +114,13 @@ export const PrimaPagina = () => {
                         <CasetaMicaPozaPrezentareWebsite
                         descriere='Websiteul unei companii fictive de Fast Food'
                         img='./img/interior-restaurant-4.jpg'
-                        to='/Versiune3'></CasetaMicaPozaPrezentareWebsite>
+                        to='Versiune3'></CasetaMicaPozaPrezentareWebsite>
                     </div>
                     <div className="CasetaMica">
                         <CasetaMicaPozaPrezentareWebsite
                         descriere='Websiteul unei companii fictive de dezvoltare imobiliară'
                         img='./img/bloc2.jpg'
-                        to='/Versiune2'></CasetaMicaPozaPrezentareWebsite>
+                        to='Versiune2'></CasetaMicaPozaPrezentareWebsite>
                     </div>
                 </div>
             </div>

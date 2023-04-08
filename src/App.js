@@ -100,12 +100,12 @@ export const Aplicatie5 = () =>{
     
       <Routes>
         <Route path='/deploy-portfolio' element={<PrimaPagina></PrimaPagina>}></Route>
-        <Route path='/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
+        <Route path='/deploy-portfolio/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
           <Route path='/Apartamente' element={<Apartamente></Apartamente>}></Route>
           <Route path='/Contacte' element={<Contacte></Contacte>}></Route>
           <Route path='/DespreNoi' element={<DespreNoi></DespreNoi>}></Route>
           <Route path='/Galerie' element={<Galerie></Galerie>}></Route>
-        <Route path='/Versiune3' element={<WebsiteRestaurant></WebsiteRestaurant>}></Route>
+        <Route path='/deploy-portfolio/Versiune3' element={<WebsiteRestaurant></WebsiteRestaurant>}></Route>
           <Route path='/cariera.restaurant' element={<Cariera></Cariera>}></Route>
           <Route path='/contact.restaurant' element={<ContactRestaurant></ContactRestaurant>}></Route>
           <Route path='/despreNoi.restaurant' element={<DespreNoiRestaurant></DespreNoiRestaurant>}></Route>
