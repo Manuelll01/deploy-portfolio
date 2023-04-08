@@ -63,7 +63,7 @@ export const DropDownNavBar = (props) => { /* asta o sa fie folosit in siteul ma
                     <li ref={rightButton}><Link to='/deploy-portfolio/Versiune3/despreNoi.restaurant'>Despre Noi</Link></li>
                     <li><Link to='/deploy-portfolio/Versiune3/livrare.restaurant'>Livrare</Link></li>
                     <li><Link to='/deploy-portfolio/Versiune3/contact.restaurant'>Contact</Link></li>
-                    <li><Link to='/deploy-portfolio/Versiune3/cariera.restaurant'>Carieră</Link></li>
+                    <li><Link to='/deploy-portfolio/Versiune3/cariera.restaurant/'>Carieră</Link></li>
                 </ul>
                 <div   className="responsive-icon-drop-down-nav-bar"><div className="div-interior-drop-down-nav-bar-icon" onClick={clickhandler}><i className={clicked ? 'fas fa-times': 'fas fa-bars'}></i></div></div>
                 
@@ -83,7 +83,7 @@ export const DropDownNavBar = (props) => { /* asta o sa fie folosit in siteul ma
                         <li><Link to='/deploy-portfolio/Versiune3/despreNoi.restaurant'>Despre Noi</Link></li>
                         <li><Link to='/deploy-portfolio/Versiune3/livrare.restaurant'>Livrare</Link></li>
                         <li><Link to='/deploy-portfolio/Versiune3/contact.restaurant'>Contact</Link></li>
-                        <li><Link to='/deploy-portfolio/Versiune3/cariera.restaurant'>Carieră</Link></li>
+                        <li><Link to='/deploy-portfolio/Versiune3/cariera.restaurant/'>Carieră</Link></li>
                     </ul>
                 </div>
         </div>
