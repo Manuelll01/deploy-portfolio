@@ -25,6 +25,16 @@ import { Burgers } from './websiteuri/websiteRestaurant/Meniu/Burgers/Burgers';
 import { Deserturi } from './websiteuri/websiteRestaurant/Meniu/Deserturi/Deserturi';
 import { Pui } from './websiteuri/websiteRestaurant/Meniu/Pui/Pui';
 import { Sosuri } from './websiteuri/websiteRestaurant/Meniu/Sosuri/Sosuri';
+import "./primapagina.css";
+import {FaReact, FaHtml5, FaJs, FaCss3} from "react-icons/fa"
+import { SideBarSlide } from "../../components/SideBarSlide/SideBarSlide";
+import { DespreMine } from "./DespreMinePrimaPagina/DespreMinePrimaPagina";
+import { Contacteazama } from "./Contacteazama/Contacteazama";
+import { ScrollUpNavBar } from "../../components/ScrollUpNavBar/ScrollUpNavBar";
+import { CasetaMicaPozaPrezentareWebsite } from "../../components/CasetaMicaPozaPrezentareWebsite/CasetaMicaPozaPrezentareWebsite";
+import { Link } from "react-router-dom";
+import { Footer4 } from "../../components/Footer4/Footer4";
+import { Form2 } from "../../components/Form2/Form2";
 
 /*import img1 from '/.imagini/pui_prajit_1.jpg'*/
 
