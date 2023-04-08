@@ -15,7 +15,7 @@ export const WebsiteRestaurant = () => {
     return(
     
     <div className="container-WebsiteRestaurant">
-        <DropDownNavBar path1='/' titlu1='Home'></DropDownNavBar>
+        <DropDownNavBar path1='/deploy-portfolio/' titlu1='Home'></DropDownNavBar>
         <div className="container-grid-restaurant">
             
             <div className="container-product-slider-restaurant">
