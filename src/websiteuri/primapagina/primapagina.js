@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from "react";
 import "./primapagina.css";
 import {FaReact, FaHtml5, FaJs, FaCss3} from "react-icons/fa"
 import { SideBarSlide } from "../../components/SideBarSlide/SideBarSlide";
-import { DespreMine } from "./DespreMinePrimaPagina/DespreMinePrimaPagina";
 import { Contacteazama } from "./Contacteazama/Contacteazama";
 import { ScrollUpNavBar } from "../../components/ScrollUpNavBar/ScrollUpNavBar";
 import { CasetaMicaPozaPrezentareWebsite } from "../../components/CasetaMicaPozaPrezentareWebsite/CasetaMicaPozaPrezentareWebsite";
