@@ -50,18 +50,6 @@
     transition: 0.5s;
 }
 
-.container-input-Form2 input:focus ~ span i{ /* aici ~ Selects every <span> element that is preceded by an <input> element*/
-    color: #0D1988;
-}
-.container-input-Form2 input:valid ~ span i{ /* aici ~ Selects every <span> element that is preceded by an <input> element*/
-    color: #0D1988;
-   }
-.container-input-Form2 textarea:focus ~ span i{ /* aici ~ Selects every <span> element that is preceded by a <textarea> element*/
-    color: #0D1988;
-}
-.container-input-Form2 textarea:valid ~ span i{ /* aici ~ Selects every <span> element that is preceded by a <textarea> element*/
-    color: #0D1988;
-   }
 
 
 .container-input-Form2 input:focus ~ span p{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/

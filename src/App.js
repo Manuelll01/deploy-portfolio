@@ -34,6 +34,7 @@ import { ScrollUpNavBar } from './components/ScrollUpNavBar/ScrollUpNavBar';
 import { CasetaMicaPozaPrezentareWebsite } from './components/CasetaMicaPozaPrezentareWebsite/CasetaMicaPozaPrezentareWebsite';
 import { Footer4 } from './components/Footer4/Footer4';
 import { Form2 } from './components/Form2/Form2';
+import { ThankYouPage } from './websiteuri/primapagina/ThankYouPage/ThankYouPage';
 
 /*import img1 from '/.imagini/pui_prajit_1.jpg'*/
 
@@ -100,6 +101,7 @@ export const Aplicatie5 = () =>{
     
       <Routes>
         <Route path='/' element={<PrimaPagina></PrimaPagina>}></Route>
+          <Route path='/Thank-You-Page' element={<ThankYouPage></ThankYouPage>}></Route>
         <Route path='/Versiune2' element={<WebsiteImobiliare></WebsiteImobiliare>}></Route> 
           <Route path='/Apartamente' element={<Apartamente></Apartamente>}></Route>
           <Route path='/Contacte' element={<Contacte></Contacte>}></Route>
