@@ -35,19 +35,19 @@ export const ScrollUpNavBar = (props) => {
         })}
         const data = [
             { content: "Home",
-                to: "/deploy-portfolio/",
+                to: "/",
                 coordonate: props.a
         }, 
             { content: "Projects",
-                to: "/deploy-portfolio/",
+                to: "/",
                 coordonate: props.b
         }, 
             { content: "About me",
-            to: "/deploy-portfolio/",
+            to: "/",
             coordonate: props.c
         }, 
             { content: "Contact",
-                to: "/deploy-portfolio/",
+                to: "/",
                 coordonate: props.d
         }, ]
     return(

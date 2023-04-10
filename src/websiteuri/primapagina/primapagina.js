@@ -68,10 +68,10 @@ export const PrimaPagina = () => {
                     <p >descriere cuvinte multe si plus si mai multe cuvinte foarte foarte multe foarte foarte foarte multe descriere cuvinte multe si plus si mai multe cuvinte foarte foarte multe foarte foarte multe foarte foarte multe foarte foarte multe</p>
                     <div className="container-butoane-prima-pagina">
                         <div className="buton-1-prima-pagina">
-                            <Link onClick={() =>{ScrollToElement(d)}} to='/deploy-portfolio/'>Contact me</Link>
+                            <Link onClick={() =>{ScrollToElement(d)}} to='/'>Contact me</Link>
                         </div>
                         <div className="buton-2-prima-pagina">
-                            <Link onClick={() =>{ScrollToElement(b)}} to='/deploy-portfolio/'>Projects</Link>
+                            <Link onClick={() =>{ScrollToElement(b)}} to='/'>Projects</Link>
                         </div>
                     </div>
                     <div className="container-iconite-caseta">{/*asta cu siguranta nu o sa fie pusa aici*/}
