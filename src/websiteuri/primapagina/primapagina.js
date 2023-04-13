@@ -1,56 +1,19 @@
 import React, {useState, useEffect, useRef} from "react";
 import "./primapagina.css";
 import {FaReact, FaHtml5, FaJs, FaCss3} from "react-icons/fa"
-import { SideBarSlide } from "../../components/SideBarSlide/SideBarSlide";
-import { Contacteazama } from "./Contacteazama/Contacteazama";
 import { ScrollUpNavBar } from "../../components/ScrollUpNavBar/ScrollUpNavBar";
 import { CasetaMicaPozaPrezentareWebsite } from "../../components/CasetaMicaPozaPrezentareWebsite/CasetaMicaPozaPrezentareWebsite";
 import { Link } from "react-router-dom";
 import { Footer4 } from "../../components/Footer4/Footer4";
 import { Form2 } from "../../components/Form2/Form2";
+import { Link as Scroll} from 'react-scroll'
 
 export const PrimaPagina = () => {
 
     
 
     const [variabilaNeschimbata, setVariabilaNeschimbata] = useState()
-    const boxRefA = useRef();
-    const boxRefB = useRef();
-    const boxRefC = useRef();
-    const boxRefD = useRef();
-    const [a, setA] = useState()
-    const [b, setB] = useState()
-    const [c, setC] = useState()
-    const [d, setD] = useState()
-    const getPosition = () => {
-        const a = boxRefA.current.offsetTop
-        const b = boxRefB.current.offsetTop
-        const c = boxRefC.current.offsetTop
-        const d = boxRefD.current.offsetTop
-        setA(a)
-        setB(b)
-        setC(c)
-        setD(d)
-    }
-
-    useEffect(() => {
-        getPosition();
-      }, []);
-
-    useEffect(() => {
-        window.addEventListener("resize", getPosition);
-      }, []);
-
-
-
-      const ScrollToElement = (element) => {
-        
-        window.scrollTo({
-            top: element,
-            behavior: "smooth"
-        })}
-
-    
+   
       useEffect(() => {
         const ScrollUpPage = () => {
             window.scrollTo(0, 0)
@@ -59,23 +22,28 @@ export const PrimaPagina = () => {
     }, [variabilaNeschimbata])
     return(
     <div className="prima-pagina">
-        <ScrollUpNavBar a={a} b={b} c={c} d={d}></ScrollUpNavBar>
-        <div className="Container-caseta-acasa" ref={boxRefA}>
-            <div className="caseta-acasa-mare-grid">
-                <div  className="caseta-acasa-scris">
+
+        <ScrollUpNavBar a={'Container-acasa'} b={'Proiecte-Primapagina'} c={'DespreMine-PP'} d={'Contact'} ></ScrollUpNavBar>
+        
+        
+
+
+        <div className="Container-acasa" >
+            <div className="caseta-acasa-flex">
+                <div  className="acasa-scris">
                     <h2>Entry Level Front End Developer</h2>
                     <p >descriere cuvinte multe si plus si mai multe cuvinte foarte foarte multe foarte foarte foarte multe descriere cuvinte multe si plus si mai multe cuvinte foarte foarte multe foarte foarte multe foarte foarte multe foarte foarte multe</p>
-                    <div className="container-butoane-prima-pagina">
-                        <div className="buton-1-prima-pagina">
-                            <Link onClick={() =>{ScrollToElement(d)}} to='/'>Contact me</Link>
+                    <div className="container-butoane-pp">
+                        <div className="buton-1-pp">
+                            <Scroll  to='Contact' spy={true} smooth={true} offset={-100} duration={800}>Contact me</Scroll>
                         </div>
-                        <div className="buton-2-prima-pagina">
-                            <Link onClick={() =>{ScrollToElement(b)}} to='/'>Projects</Link>
+                        <div className="buton-2-pp">
+                        <Scroll  to='Projects' spy={true} smooth={true} offset={-350} duration={800}>Projects</Scroll>
                         </div>
                     </div>
                     <div className="container-iconite-caseta">{/*asta cu siguranta nu o sa fie pusa aici*/}
                         <div className="iconita-1" title="HTML">
-                            <FaHtml5></FaHtml5>
+                            <FaHtml5 ></FaHtml5>
                         </div>
                         <div className="iconita-3" title="CSS">
                             <FaCss3></FaCss3>
@@ -88,8 +56,8 @@ export const PrimaPagina = () => {
                         </div>
                     </div>
                 </div>
-                <div className="caseta-acasa-img">
-                    <div className="container-mic-poza-acasa">
+                <div className="acasa-img">
+                    <div className="container-img-acasa">
                         <img src="./img/poza_fara_background1.png"></img>
                         <div class="custom-shape-divider-bottom-1679011994">
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -98,42 +66,56 @@ export const PrimaPagina = () => {
                                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                             </svg>
                         </div>
-                        
                     </div>
                     
                 </div>
             </div>
         </div>
-        <div className="Container-Proiecte" >
-            <div className="curve layer1"></div>
-            <h1 ref={boxRefB}>Projects</h1>
-            <div className="Container-Mic-Proiecte">
-                <div className="Proiecte">
-                    <div className="CasetaMica">
+
+
+        <div className="Proiecte-Primapagina" >
+
+            <div className="caseta-proiecte-flex">
+                <div className="Titlu-Si-Scris-Proiect">
+                    <h2 id="Projects">My Projects</h2>
+                    <p>In order to learn the basics of web developement and prepare for my future work i have created a few small projects: </p>
+                </div>
+
+                <div className="Container-Casete-Proiecte">
+                    <div className="CasetaProiect">
                         <CasetaMicaPozaPrezentareWebsite
                         descriere='Websiteul unei companii fictive de Fast Food'
                         img='./img/interior-restaurant-4.jpg'
                         to='Versiune3'></CasetaMicaPozaPrezentareWebsite>
                     </div>
-                    <div className="CasetaMica">
+                    
+                    <div className="CasetaProiect">
                         <CasetaMicaPozaPrezentareWebsite
                         descriere='Websiteul unei companii fictive de dezvoltare imobiliară'
                         img='./img/bloc2.jpg'
                         to='Versiune2'></CasetaMicaPozaPrezentareWebsite>
                     </div>
                 </div>
+
+                
+                
             </div>
-            <div className="curve layer2"></div>
         </div>
-        <div className="Container-DespreMinePrimaPagina" ref={boxRefC}>
+
+        
+        <div className="DespreMine-PP" >
             <h2>Despre Mine</h2>
         </div>
-        <div className="Container-ContactPrimaPagina" >
-            <div className="curve layer1"></div>
-            <h1 ref={boxRefD}>Contact</h1>
-            <div className="Container-interior-Contact">
-                <Form2></Form2>
-                <div className="Container-cutie-contact">
+
+        
+        <div className="Container-ContactPP" >
+            
+            <h2 id="Contact">Contact</h2>
+            <div className="Container-interior-Contact-PP">
+                <div className="Contaier-form2">
+                    <Form2></Form2>
+                </div>
+                <div className="Container-cutie-contact-PP">
                     <div className="cutie-contact">
                         <div className="cutie-contact-iconita">
                             <i class="fa-solid fa-envelope"></i>
@@ -157,7 +139,7 @@ export const PrimaPagina = () => {
                     </div>
                 </div>
             </div>
-            <div className="curve layer2"></div>
+            
         </div>
             
             {/*
@@ -167,7 +149,7 @@ export const PrimaPagina = () => {
                 DespreMine = {<DespreMine></DespreMine>}
                 Contacteazama = {<Contacteazama></Contacteazama>}></SideBarSlide>
     */}
-    <Footer4 a={a} b={b} c={c} d={d}></Footer4>
+    <Footer4 a={'Container-acasa'} b={'Proiecte-Primapagina'} c={'DespreMine-PP'} d={'Contact'}></Footer4>
     </div>
     )
     

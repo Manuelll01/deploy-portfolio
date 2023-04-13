@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer4.css"
 import { Link } from "react-router-dom";
+import {Link as Scroll} from "react-scroll"
 
 export const Footer4 = (props) => {
     const ScrollToElement = (element) => {
@@ -11,20 +12,20 @@ export const Footer4 = (props) => {
         })}
         const data = [
             { content: "Home",
-                to: "/",
-                coordonate: props.a
+                coordonate: props.a,
+                offset: 0
         }, 
             { content: "Projects",
-                to: "/",
-                coordonate: props.b
+                coordonate: props.b,
+                offset: 0
         }, 
             { content: "About me",
-            to: "/",
-            coordonate: props.c
+            coordonate: props.c,
+            offset: 0
         }, 
             { content: "Contact",
-                to: "/",
-                coordonate: props.d
+                coordonate: props.d,
+                offset: -50
         }, ]
     return(
         <div className="Container-Footer4">
@@ -37,7 +38,7 @@ export const Footer4 = (props) => {
                     {data.map((item, i) => {
                         return(
                             <ul>
-                                <li><Link onClick={() =>{ScrollToElement(item.coordonate)}} key={i} to={item.to}>{item.content}</Link></li>
+                                <li><Scroll  to={item.coordonate} spy={true} smooth={true} offset={item.offset} duration={800}>{item.content}</Scroll></li>
                             </ul>
                             
                         )
@@ -50,8 +51,8 @@ export const Footer4 = (props) => {
                     <h1>Projects</h1>
                 </div>  
                 <div className="Projects-footer4">
-                    <Link to='Versiune3'>Fast Food Website</Link>
-                    <Link to='Versiune2'>Real Estate Website</Link>
+                    <Link to='/Versiune3'>Fast Food Website</Link>
+                    <Link to='/Versiune2'>Real Estate Website</Link>
                 </div>
             </div>
 

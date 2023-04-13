@@ -9,58 +9,74 @@
     font-family: Roboto;
 }
 
-.Container-caseta-acasa{
-    min-height: 80vh;
-    background-color: #0d1988;
-    display: flex;
-    justify-content: center;
-    padding: 0 125px;
-}
-.caseta-acasa-mare-grid{
-    width: 1200px;
-    min-width: 900px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-.caseta-acasa-scris{
-    display: block;
-    color: white;
+#Element-invizibil-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 
-.caseta-acasa-scris h2{
+
+.Container-acasa{
+    min-height: 100vh;
+    padding: 0 150px;
+    background-color: #efeff0;
+    padding-top: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caseta-acasa-flex{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.acasa-scris{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    color: #1a2940;
+}
+.acasa-scris h2{
     font-size: clamp(2rem, 3vw, 3.5rem);
-    max-width: 500px;
     font-weight: 800;
 }
-.caseta-acasa-scris p{
+.acasa-scris p{
     margin-top: 2rem;
     line-height: 2rem;
-    max-width: 500px;
 }
-.container-butoane-prima-pagina{
-    margin-top: 2rem;
+.container-butoane-pp{
+    display: flex;
 }
-.buton-1-prima-pagina a{
+.buton-1-pp, .buton-2-pp{
+    padding-top: 1rem;
+}
+.buton-1-pp a{
     text-decoration: none;
     color: black;
     padding: 20px 30px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 0);
+    background-color: #f05927;
     font-size: 1.25rem;
     font-weight: 800;
     display: inline-block;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
 }
-.buton-2-prima-pagina a{
+.buton-2-pp a{
     text-decoration: none;
     color: white;
     padding: 20px 30px;
     border-radius: 5px;
-    background-color: #22104d;
+    background-color: #46219c;
     font-size: 1.25rem;
     font-weight: 800;
     display: inline-block;
+    cursor: pointer;
 }
 .container-iconite-caseta{
     display: flex;
@@ -68,67 +84,6 @@
 .container-iconite-caseta *{
     margin-right: 0.25rem;
     font-size: 2rem;
-}
-.Container-Proiecte{
-    min-height: calc(80vh + 2 * (100vw/6));
-    display: flex;
-    flex-direction: column; 
-    align-items: center;  
-}
-
-.Container-Proiecte > h1{
-    padding: 0 150px;
-    margin-bottom: 1rem 0;
-    font-size: clamp(2rem, 3vw, 3.5rem);
-}
-
-.Container-Mic-Proiecte{
-    width: 100vw;
-    padding: 0 125px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.Proiecte{
-    display: flex;
-    justify-content: center;
-}
-.CasetaMica{    
-    width: 500px;
-    min-width: 450px;
-    aspect-ratio: 1/1;
-    margin: 25px;
-}
-
-.Container-DespreMinePrimaPagina{
-    color: white;
-    min-height: calc(100vh - 2 * (100vw/12));
-    background-color: #0d1988;
-    
-}
-.Container-DespreMinePrimaPagina h2{
-    margin-top: auto;
-}
-.curve{
-    aspect-ratio: 900/150;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-}
-.layer1{
-    background-image: url(/src/imagini/wave-haikei2.svg);
-    z-index: 2;
-}
-.layer2{
-    background-image: url(/src/imagini/wave-haikei3.svg);
-    z-index: 2;
-    margin-top: auto;
-}
-.container-iconite-caseta{
-    margin-top: 0.5rem;
 }
 .iconita-1{
     color: rgb(206, 134, 0);
@@ -142,19 +97,74 @@
 .iconita-4{
     color: rgb(0, 128, 202);
 }
-.caseta-acasa-img{
-    position: relative;
+
+
+.Proiecte-Primapagina{
+    background-color: white;
+    min-height: 100vh;
+    padding: 0 150px;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     
 }
-.container-mic-poza-acasa{
-    width: 400px;
+.caseta-proiecte-flex{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+.Container-Casete-Proiecte{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.CasetaProiect{    
+    width: 350px;
+    aspect-ratio: 2/3;
+}
+.CasetaProiect:first-child{
+    margin-right: 2rem;
+}
+.Titlu-Si-Scris-Proiect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    color: #1a2940;
+    
+}
+.Titlu-Si-Scris-Proiect h2{
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 800;
+}
+.Titlu-Si-Scris-Proiect p{
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+
+
+.DespreMine-PP{
+    background-color: #efeff0;
+    min-height: 100vh;
+    
+}
+.Container-DespreMinePP h2{
+}
+
+
+
+.container-iconite-caseta{
+    margin-top: 0.5rem;
+}
+.acasa-img{
+}
+.container-img-acasa{
     position: relative;
 }
-.caseta-acasa-img img{
-    width: 100%;
-    display: block;
+.acasa-img img{
+   width: 100%;
 }
 
 
@@ -176,25 +186,30 @@
 }
 
 .custom-shape-divider-bottom-1679011994 .shape-fill {
-    fill: #0D1988;
+    fill: #efeff0;
 }
-.Container-ContactPrimaPagina{
+.Container-ContactPP{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: calc(80vh + 2 * (100vw/6));
     justify-content: center;
-    
 }
-.Container-ContactPrimaPagina h1{
-    text-align: center;
+.Contaier-form2{
+    padding: 0 1.25rem;
+    width: 800px;
+    max-width: 100%;
+}
+.Container-ContactPP h2{
     font-size: clamp(2rem, 3vw, 3.5rem);
+    color: #1a2940;
+    text-align: center;
     margin-bottom: 2rem;
 }
-.Container-interior-Contact{/*din cauza formelor de la baza si top-ul divului nu puteam avea display flex simplu in containerul mare*/
+.Container-interior-Contact-PP{
     display: flex;
     justify-content: center;
 }
-.Container-cutie-contact{
+.Container-cutie-contact-PP{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,9 +220,13 @@
     box-shadow: 0.25rem 0.25rem 0.5rem 0.5rem rgb(180, 176, 176);
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 250px;
     justify-content: center;
     align-items: center;
+}
+
+.cutie-contact h4, .cutie-contact p{
+    color: #1a2940;
 }
 .cutie-contact-iconita{
     width: 65px;
@@ -216,34 +235,126 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #0D1988;
+    background-color: #f05927;
+    
 }
+
 .cutie-contact i{
     font-size: 2rem;
-    color: white;
+    color: #1a2940;
 }
 .cutie-contact *{
     margin: 5px 0;
 }
-
-    /*proiecte*/
-    @media (max-width: 1200px){
-        .Container-caseta-acasa{
-            padding: 0 75px;
-        }
-        .caseta-acasa-img{
-            justify-content: flex-end;
-        }
-        }
-@media (max-width: 960px){
-    /*aici o sa fie primul media pt structura paginii(nu pt elemente), si o sa fie folosita marimea asta la toate sectiuniile*/
-}
-@media (max-width: 600px){
-    .caseta-acasa-poza{
-        display: none;
+@media (max-width: 1350px){
+    .Container-acasa, .Proiecte-Primapagina{
+        padding: 0 75px;
     }
-    .caseta-acasa-scris{
+    .Container-acasa{
+        padding-top: 10vh;
+    }
+    .CasetaProiect{    
+        width: 250px;
+    }
+}
+@media (max-width: 1200px){
+    .acasa-scris h2{
+        margin-top: 1rem;
+    }
+    .Container-acasa{
+        padding: 0 50px;
+        padding-top: 10vh;
+    }
+
+
+    .Proiecte-Primapagina{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 960px){
+    .caseta-acasa-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .acasa-scris{
+        width: auto;
+        text-align: center;
+    }
+    .container-butoane-pp{
+        justify-content: center;
+    }
+    .container-iconite-caseta{
+        justify-content: center;
+    }
+
+
+    .Titlu-Si-Scris-Proiect{
+        width: auto;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .caseta-proiecte-flex{
+        flex-direction: column;
+    }
+    .Container-Casete-Proiecte{
+        justify-content: space-around;
+    }
+    .CasetaProiect{
+        width: 400px;
+    }
+
+
+    .Container-interior-Contact-PP{
+        flex-direction: column;
+    }
+    .Contaier-form2{
         width: 100%;
-        padding: 0 25px;
+    }
+    .Container-cutie-contact-PP{
+        flex-direction: row;
+        margin: 2rem 0;
+    }
+}
+
+@media(max-width: 850px){
+    .Container-cutie-contact-PP{
+        flex-direction: column;
+    }
+    .cutie-contact{
+        margin: 1rem 0;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 600px){
+    .Container-acasa{
+        padding: 0 20px;
+        padding-top: 10vh;
+    }
+    .acasa-img{
+        width: 80vw;
+    }
+    .buton-2-pp a{
+        height: 100%;
+    }
+
+
+    .Proiecte-Primapagina{
+        padding: 0 20px;
+    }
+    .Container-Casete-Proiecte{
+        flex-direction: column;
+    }
+    .CasetaProiect:first-child{
+        margin-right: 0;
+    }
+    .CasetaProiect{
+        width: 100%;
+        aspect-ratio: 1/1;
+        margin: 1rem 0;
+    }
+    .Titlu-Si-Scris-Proiect{
+        margin-top: 1rem;
     }
 }

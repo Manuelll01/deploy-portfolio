@@ -1,7 +1,7 @@
 .Container-Footer4{
     padding: 25px;
-    background-color: #0d1988;
-    color: white;
+    background-color: #f05927;
+    color: #1a2940;
     display: flex;
     justify-content: space-around;
 }
@@ -11,7 +11,8 @@
 }
 .Container-Footer4 ul li a{
     text-decoration: none;
-    color: white;
+    color: #1a2940;
+    cursor: pointer;
 }
 .Container-Navigation, .Container-Projects, .Container-Contact{
     padding: 0;
@@ -28,7 +29,7 @@
 
 .Navigation-footer4 > *, .Projects-footer4 > *, .Contact-footer4 > *{
     text-decoration: none;
-    color: white;
+    color: #1a2940;
     padding: 10px 0;
 }
 .container-info-footer4{
@@ -40,4 +41,22 @@
 .Navigation-footer4 *, .Projects-footer4 *{
     
     width: auto;
+}
+
+@media (max-width: 800px){
+    .Container-Footer4{
+        flex-direction: column;
+        padding: 25px 125px;
+    }
+}
+
+@media (max-width: 600px){
+    .Container-Footer4{
+        padding: 25px 50px;
+    }
+}
+@media (max-width: 400px){
+    .Container-Footer4{
+        padding: 25px;
+    }
 }

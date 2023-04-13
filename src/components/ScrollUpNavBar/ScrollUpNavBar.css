@@ -7,8 +7,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    color: white;
-    background-color: #0d1988;
+    color: #1a2940;
+    background-color: #f05927;
     z-index: 10;
 
     transition: 0.25s cubic-bezier(0,.19,1,.88);
@@ -16,23 +16,73 @@
 .Container-ScrollUpNavBar *:not(i){
     font-family: Roboto;
 }
+
+.Container-Buton-Principal-ScrollUpNavBar{
+    z-index: 8;
+}
+
+.Container-butoane-ScrollUpNavBar{
+    z-index: 8;
+}
 .Container-butoane-ScrollUpNavBar a{
     margin-left: 2rem;
     text-decoration: none;
-    color: white;
-
+    color: #1a2940;
+    cursor: pointer;
+    
 }
 .Container-Iconita{
     cursor: pointer;
     display: none;
+    z-index: 8;
+}
+
+
+.Container-Side-bar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #f05927;
+    width: 250px;
+    transform: translate3d(0, 0, 0);
+    display: none;
+    flex-direction: column;
+    transition: 0.25s cubic-bezier(0,.19,1,.88);
+    z-index: 1;
+    
+}
+.scroll-up-active{
+    right: -250px;
+    transition: 0.25s cubic-bezier(0,.19,1,.88);
+}
+.Container-Side-bar a:first-child{
+    margin-top: 15vh;
+}
+.Container-Side-bar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1a2940;
+    padding: 20px;
+    transition: 0.25s;
+}
+.Container-Side-bar a:hover{
+    background-color: #c94c22;
+    transition: 0.5s;
+}
+.scrolledDown .Container-Side-bar{
+    transform: translate3d(0, 11vh, 0);
+    transition: 0.25s cubic-bezier(0,.19,1,.88);
 }
 .scrolledDown{
     position: fixed;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -110%, 0);
 
     transition: 0.25s cubic-bezier(0,.19,1,.88);
 
 }
+
+
 @media (max-width: 960px) {
     .Container-Iconita{
         display: block;
@@ -42,6 +92,15 @@
     }
     .Container-ScrollUpNavBar{
         padding: 0 50px;
+    }
+    .Container-Side-bar{
+        display: flex;
+    }
+    .scrolledDown{
+        transform: translate(0);
+    }
+    .scrolledDown .Container-Side-bar{
+        transform: translate(0);
     }
 }
 @media (max-width: 600px) {
