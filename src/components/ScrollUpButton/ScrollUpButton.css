@@ -20,7 +20,7 @@
 .container-ScrollUpButton button:hover{
     background-color: rgb(32, 46, 36);
 }
-.active{
+.activeee{
     position: fixed;
     display: block;
     bottom: 10%;

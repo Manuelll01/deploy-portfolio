@@ -1,6 +1,6 @@
 .Container-Form2{
     container-type: inline-size;
-    width: 800px;
+    width: 100%;
 }
 .Container-Form2 form{
     padding: 2rem 4rem 1rem 4rem;
@@ -50,8 +50,6 @@
     transition: 0.5s;
 }
 
-
-
 .container-input-Form2 input:focus ~ span p{ /* aici ~ Selects every <span> element that is preceded by a <input> element*/
     opacity: 0;
     font-size: 12px;
@@ -81,12 +79,12 @@
 }
 .container-input-Form2 input[type="radio"]{
     width: 20px;
-    accent-color: #0D1988;
+    accent-color: #f05927;
 }
 .container-input-Form2 input[type="submit"]{
     width: 150px;
-    background: #0D1988;
-    color: white;
+    background: #f05927;
+    color: #1a2940;
     border: none;
     cursor: pointer;
     padding: 15px;
