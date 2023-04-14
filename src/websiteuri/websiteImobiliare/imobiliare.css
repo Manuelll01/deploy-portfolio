@@ -5,9 +5,15 @@
     
 }
 
-.pagina-imobiliare{
-    width: 100%;
-    height: 100%;
+.pagina-imobiliare-interior{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/src/imagini/imobiliare-background-1.jpg) ;
+    background-size: cover;
+}
+.footer-1{
+    margin-top: auto;
 }
 .pagina-imobiliare * :not(.nav-bar-3 *, i){
     font-family: Roboto;
@@ -15,9 +21,27 @@
 .bla{
     margin-left: 2rem;
 }
+.Layout-Imobiliare{
+    display: flex;
+    margin-top: 10vh;
+}
+.Container-Scris-Layout{
+    width: 50vw;
+    padding: 0 5vw;
+    color: white;
+}
+.Casuta-Principala-Layout{
 
+}
 
-
+.Casuta-Secundara-Layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+}
+.Layout-Imobiliare img{
+    width: 50vw;
+}
 
 .loop-video{
     position:fixed;
@@ -207,6 +231,3 @@
         margin: 3rem 0;
     }
 }
-
-
-

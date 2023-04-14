@@ -96,7 +96,6 @@ export const DespreNoi = () =>{
                 <NavBar3 className="NavBar3"
                         titlu={'Acasă'}
                         path1="/Versiune2"></NavBar3>
-                <div className="container-img"></div>
 
                 <ScrollUpButton></ScrollUpButton>
 

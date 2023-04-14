@@ -31,7 +31,7 @@
 .container-forum-contact{
     display: flex;
     padding: 0 25px;
-    margin-top: 3rem;
+    margin-top: 15vh;
 }
 .container-forum-contact-part-1{
     flex-basis: 450px;

@@ -29,7 +29,6 @@ export const Contacte = () => {
                     path1="/Versiune2"
                     titlu="Acasă"></NavBar3>
                     
-                <div className="container-img-contact"></div>
 
                 <ScrollUpButton></ScrollUpButton>
                 

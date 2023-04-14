@@ -11,7 +11,7 @@ export const NavBar3 = (props) => {
     const [clicked, setClicked] = useState(false)
 
     const laScroll = () => {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 200) {
             setScroll(true)
         }
         else {

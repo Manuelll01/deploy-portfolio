@@ -28,7 +28,6 @@ export const Galerie = () =>{
                     path1="/Versiune2"></NavBar3>
             <div className="continut-finisaje">
 
-                <div className="container-img-finisaje"></div>
 
                 
                 <div className="container-mare primul-item">

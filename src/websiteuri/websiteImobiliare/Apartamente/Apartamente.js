@@ -22,12 +22,11 @@ export const Apartamente = () =>{
     descidePaginaLaTop()
     return(
         <div className={buttonPopup ? "container-apartamente filtru" : "container-apartamente"}>
-            
+            <div className="container-apartamente-2">
                 <NavBar3
-                className="navbar-apartamente"
-                titlu={'Acasă'}
-                path1={'/Versiune2'}></NavBar3>
-                <div className="img1-container"></div>
+                    className="navbar-apartamente"
+                    titlu={'Acasă'}
+                    path1={'/Versiune2'}></NavBar3>
                 
                 <div className="container-caseta-display">
                     <CasetaDisplayApartamenteCuPopup></CasetaDisplayApartamenteCuPopup>
@@ -38,6 +37,8 @@ export const Apartamente = () =>{
                 
                 
             
+            </div>
+                
             <div className='footer-1'>
                 <Footer2></Footer2>
             </div>

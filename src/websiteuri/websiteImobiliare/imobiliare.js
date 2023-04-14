@@ -2,36 +2,57 @@ import React, { useState } from "react";
 import "./imobiliare.css";
 import { Link } from "react-router-dom";
 import { NavBar3 } from "../../components/NavBar3/NavBar3";
+import { Footer2 } from "../../components/Footer2/Footer2";
 
 
 export const WebsiteImobiliare = () => {
     const [sunaAcum, setSunaAcum] = useState("Sună acum")
+    const descidePaginaLaTop = () => {
+        window.scrollTo(0, 0)
+    }
+    descidePaginaLaTop()
     return(
     <div className="pagina-imobiliare">
-        
+        <div className="pagina-imobiliare-interior">
             <NavBar3 className="NavBar3"
                     titlu={'Acasă'}
                     path1="/"></NavBar3>
-
-
-
-
-
-            
-                <video autoPlay loop muted plays-inline src="img/realestate4.mp4" class="loop-video"><p></p></video>
-            
-            <div className="container-aliniat-prima-pagina">
-                <div className="titlu-aliniat"><h1>Totul pentru calitate</h1></div>
-                <div className="container-butoane-prima-pagina">
-                    <div className="buton1-prima-pagina"><Link to="/Apartamente">Vezi apartamente</Link></div>
-                    <div className="buton2-prima-pagina"><Link onClick={() => {setSunaAcum("0774 649 357")}} to="/Versiune2">{sunaAcum}</Link></div>
+            <div className="Layout-Imobiliare">
+                <div className="Container-Scris-Layout">
+                    <div className="Casuta-Principala-Layout">
+                        <h1>Explore Residence</h1>
+                        <h3>un nou mod de a trăi</h3>
+                        <p>În acest proiect imobiliar misiunea noastră a fost de a găsi moduri inovative de a înfrunta problemele asociate cu viața urbană. Ne mândrim cu faptul că în urma eforturilor noastre am ajutat 3000 de famili să aibă o viață mai frumoasă</p>
+                        <Link>Apartamente</Link>
+                    </div>
+                    <div className="Casuta-Secundara-Layout">
+                        <div>
+                            <h2>Titlu frumos si aratos</h2>
+                            <p> multe cuvinte scrise si rescrise vai vai vai e 2:00 noaptea si nu ma mai gandesc la nimic</p>
+                        </div>
+                        <div>
+                            <h2>Titlu frumos si aratos</h2>
+                            <p> multe cuvinte scrise si rescrise vai vai vai e 2:00 noaptea si nu ma mai gandesc la nimic</p>
+                        </div>
+                    </div>
                 </div>
-                              
+                <img src="img/salesman-no-background.png"></img>
             </div>
+
+
+
+
+            
+            
+            
                 
+        </div>
+            
             
         
-        
+            <div className='footer-1'>
+                <Footer2></Footer2>
+            </div>
          
     </div>
     )
