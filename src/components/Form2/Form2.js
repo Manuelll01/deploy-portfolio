@@ -7,7 +7,7 @@ export const Form2 = () => {
             <form action="https://formsubmit.co/manuel.mircea20@gmail.com"  method="POST">
 
             <input type="hidden" name="_captcha" value="false"></input>
-            <input type="hidden" name="_next" value="https://manuelll01.github.io/deploy-portfolio/Thank-You-page"></input>
+            <input type="hidden" name="_next" value="http://localhost:3000/Thank-You-page"></input>
 
                     <div className="container-input-Form2"  id="input1-Form2">
                         <input type='text' required='required' name="Full name" ></input>
@@ -40,13 +40,10 @@ export const Form2 = () => {
                             <div className="checkbox-box">
                                 <input type="radio" name="experience" required='required' value="Junior" ></input> <p>Junior</p>
                             </div>
-                            
-                            
-                            
                         </div>
                     </div>
                     <div className="container-input-Form2" id="text-area">
-                        <textarea className="text" type='text' name="message" ></textarea>
+                        <textarea className="text2" type='text' name="message" ></textarea>
                         <span><i class="fa-solid fa-message"></i><p>Mesaj</p></span>
                     </div>
                     <div className="flex-checkbox-send">

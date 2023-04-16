@@ -9,7 +9,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/src/imagini/imobiliare-background-1.jpg) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.50)), url(/src/imagini/imobiliare-background-1.jpg) ;
     background-size: cover;
 }
 .footer-1{
@@ -28,19 +28,59 @@
 .Container-Scris-Layout{
     width: 50vw;
     padding: 0 5vw;
-    color: white;
+    background-image: linear-gradient(to right, rgb(76, 131, 252) , rgb(240, 85, 240));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Container-Scris-Layout p{
+    color: rgb(173, 173, 173);
+    margin-top: 10px;
+    line-height: 1.5rem;
 }
 .Casuta-Principala-Layout{
-
+    margin-top: 5vh;
+    
+}
+.Casuta-Principala-Layout a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-top: 2rem;
 }
 
+.Casuta-Principala-Layout h2{
+    font-size: clamp(1.75rem, 3vw, 3.5rem);
+}
+.Casuta-Principala-Layout h3{
+    font-size: clamp(1.75rem, 1.25vw, 3.5rem);
+}
+.secundara-mica h2{
+    font-size: clamp(2rem, 2vw, 3.5rem);
+}
+.secundara-mica:first-child{
+    padding-right: 10px;
+}
+.secundara-mica:nth-child(2){
+    padding-left: 10px;
+}
 .Casuta-Secundara-Layout{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 5rem;
+    margin-top: 15vh;
+    
 }
-.Layout-Imobiliare img{
+.container-imagine-imobiliare{
     width: 50vw;
+    display: flex;
+    align-items: center;
+}
+.container-imagine-imobiliare img{
+    width: 100%;
 }
 
 .loop-video{
@@ -147,31 +187,6 @@
     padding: 2rem;
 }
 
-
-.container-aliniat-prima-pagina{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    bottom: -500px;
-    padding: 0 100px;/*aliniere anv-bar*/
-}
-.container-butoane-prima-pagina{
-    display: flex;
-}
-.container-aliniat-prima-pagina ul{
-    list-style: none;
-}
-.container-aliniat-prima-pagina .titlu-aliniat h1{
-    display: inline-block;
-    border-radius: 15px;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 4rem;
-    font-family: Righteous-Regular;
-    /*
-    background-color: rgba(131, 129, 129, 0.6);
-    backdrop-filter: blur(2px); /*atribut nou (de tinut minte)*/
-}
 .buton1-prima-pagina{
     margin-right: 2rem;
     transition: 0.5s;
@@ -207,18 +222,17 @@
     transition: 0.5s;
 }
 @media (max-width: 960px){
-    .container-aliniat-prima-pagina{
-        padding: 0 50px;/*media identic cu nav-bar-3 ca sa se alinieze*/
-        align-items: center;
-        text-align: center;
-        bottom: -300px;
+    .container-imagine-imobiliare{
+        display: none;
     }
-
+    .Container-Scris-Layout{
+        width: 100vw;
+    }
+    .Container-Scris-Layout p{
+        max-width: 600px;
+    }
 }
 @media (max-width: 500px){
-    .container-aliniat-prima-pagina{
-        padding: 0 25px;/*media identic cu nav-bar-3 ca sa se alinieze*/
-    }
     .container-butoane-prima-pagina{
         flex-direction: column;
         justify-content: center;
@@ -231,3 +245,6 @@
         margin: 3rem 0;
     }
 }
+
+
+

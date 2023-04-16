@@ -70,7 +70,7 @@ export const DropDownNavBar = (props) => { /* asta o sa fie folosit in siteul ma
             </div>
             <div className= {clicked ? "side-bar-drop-down-nav-bar activ": "side-bar-drop-down-nav-bar" }>
                     <ul>
-                        <li className="meniu-sidebar"><Link to='/meniu.restaurant' onClick={sideClickhandler}><i  class={sideCliced ? "fa-solid fa-angle-down" : "fa-solid fa-angle-right"}></i>meniu</Link></li>
+                        <li className="meniu-sidebar"><Link to='' onClick={sideClickhandler}><i  class={sideCliced ? "fa-solid fa-angle-down" : "fa-solid fa-angle-right"}></i>meniu</Link></li>
                     
                         <div className={sideCliced ? "meniu-2-sidebar activ2": "meniu-2-sidebar"}>
                         <li><Link to='/meniu.restaurant'><i class="fa-solid fa-angles-right"></i>Toate produsele</Link></li>

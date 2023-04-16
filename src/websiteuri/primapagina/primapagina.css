@@ -148,9 +148,12 @@
 .DespreMine-PP{
     background-color: #efeff0;
     min-height: 100vh;
+    color: #1a2940;
     
 }
-.Container-DespreMinePP h2{
+.DespreMine-PP h2{
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 800;
 }
 
 
@@ -279,12 +282,17 @@
     .acasa-scris{
         width: auto;
         text-align: center;
+        margin-top: 5rem;
     }
     .container-butoane-pp{
         justify-content: center;
+        margin-top: 10px;
     }
     .container-iconite-caseta{
         justify-content: center;
+    }
+    .acasa-img{
+        margin-top: 10vh;
     }
 
 
@@ -358,3 +366,5 @@
         margin-top: 1rem;
     }
 }
+
+    

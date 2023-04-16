@@ -94,10 +94,11 @@ export const Aplicatie4 = () => {
 export const Aplicatie5 = () =>{
 
   
+
   return(
     <>
     
-    <Router basename='/deploy-portfolio/'>
+    <Router>
     
       <Routes>
         <Route path='/' element={<PrimaPagina></PrimaPagina>}></Route>
@@ -163,5 +164,6 @@ export const ProductCard1App = () => {
 
 
 export default App;
+
 
 

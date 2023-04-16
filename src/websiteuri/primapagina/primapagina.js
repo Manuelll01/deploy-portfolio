@@ -104,7 +104,7 @@ export const PrimaPagina = () => {
 
         
         <div className="DespreMine-PP" >
-            <h2>Despre Mine</h2>
+            <h2>About me</h2>
         </div>
 
         

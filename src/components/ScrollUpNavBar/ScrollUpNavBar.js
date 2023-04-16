@@ -73,7 +73,7 @@ export const ScrollUpNavBar = (props) => {
             <div className={ var1 ? "Container-Side-bar" : "Container-Side-bar scroll-up-active"}>
                 {data.map((item, i) => {
                     return(
-                        <Link onClick={() =>{ScrollToElement(item.coordonate)}} key={i} to={item.to}>{item.content}</Link>
+                        <Scroll  to={item.coordonate} spy={true} smooth={true} offset={item.offset} duration={800}>{item.content}</Scroll>
                     )
                 })}
             </div>
