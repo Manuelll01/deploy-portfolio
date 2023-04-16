@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/deploy-portfolio/static/css/main.f1432124.css",
-    "main.js": "/deploy-portfolio/static/js/main.e12a8ebc.js",
+    "main.css": "/deploy-portfolio/static/css/main.95feeea8.css",
+    "main.js": "/deploy-portfolio/static/js/main.70e574b7.js",
     "static/media/imobiliare-background-1.jpg": "/deploy-portfolio/static/media/imobiliare-background-1.45f812aaef4f2a2ae606.jpg",
     "static/media/block2.jpg": "/deploy-portfolio/static/media/block2.fa3e6ed4942cf152ac78.jpg",
     "static/media/img_fundal_imobiliare_2.jpg": "/deploy-portfolio/static/media/img_fundal_imobiliare_2.40830e260a1a45252edb.jpg",
@@ -21,11 +21,13 @@
     "static/media/Righteous-Regular.ttf": "/deploy-portfolio/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
     "static/media/JosefinSans-Bold.ttf": "/deploy-portfolio/static/media/JosefinSans-Bold.57aa1a839cbc3bfd7959.ttf",
     "index.html": "/deploy-portfolio/index.html",
-    "main.f1432124.css.map": "/deploy-portfolio/static/css/main.f1432124.css.map",
-    "main.e12a8ebc.js.map": "/deploy-portfolio/static/js/main.e12a8ebc.js.map"
+    "static/media/wave-haikei3.svg": "/deploy-portfolio/static/media/wave-haikei3.5aa5be9ad5b258e3495e.svg",
+    "static/media/wave-haikei2.svg": "/deploy-portfolio/static/media/wave-haikei2.04dfc97ae91936d5d7f0.svg",
+    "main.95feeea8.css.map": "/deploy-portfolio/static/css/main.95feeea8.css.map",
+    "main.70e574b7.js.map": "/deploy-portfolio/static/js/main.70e574b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1432124.css",
-    "static/js/main.e12a8ebc.js"
+    "static/css/main.95feeea8.css",
+    "static/js/main.70e574b7.js"
   ]
 }
