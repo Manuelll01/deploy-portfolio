@@ -98,7 +98,7 @@ export const Aplicatie5 = () =>{
   return(
     <>
     
-    <Router>
+    <Router basename='deploy-portfolio/'>
     
       <Routes>
         <Route path='/' element={<PrimaPagina></PrimaPagina>}></Route>
