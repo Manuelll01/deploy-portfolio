@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/deploy-portfolio/static/css/main.95feeea8.css",
-    "main.js": "/deploy-portfolio/static/js/main.364aaa0f.js",
+    "main.css": "/deploy-portfolio/static/css/main.d8531726.css",
+    "main.js": "/deploy-portfolio/static/js/main.a651af04.js",
     "static/media/imobiliare-background-1.jpg": "/deploy-portfolio/static/media/imobiliare-background-1.45f812aaef4f2a2ae606.jpg",
     "static/media/block2.jpg": "/deploy-portfolio/static/media/block2.fa3e6ed4942cf152ac78.jpg",
     "static/media/img_fundal_imobiliare_2.jpg": "/deploy-portfolio/static/media/img_fundal_imobiliare_2.40830e260a1a45252edb.jpg",
     "static/media/Caveat-VariableFont_wght.ttf": "/deploy-portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
+    "static/media/CV_Negoiță_Mircea.pdf": "/deploy-portfolio/static/media/CV_Negoiță_Mircea.2783be718ee8d8301211.pdf",
     "static/media/RobotoSlab-VariableFont_wght.ttf": "/deploy-portfolio/static/media/RobotoSlab-VariableFont_wght.24c71ebd53c3ed50accb.ttf",
     "static/media/Lora-VariableFont_wght.ttf": "/deploy-portfolio/static/media/Lora-VariableFont_wght.3a653a05dd1cd5925a30.ttf",
     "static/media/LosPollosHermanos2.jpg": "/deploy-portfolio/static/media/LosPollosHermanos2.4cf13d07a45468e1fbae.jpg",
@@ -23,11 +24,11 @@
     "index.html": "/deploy-portfolio/index.html",
     "static/media/wave-haikei3.svg": "/deploy-portfolio/static/media/wave-haikei3.5aa5be9ad5b258e3495e.svg",
     "static/media/wave-haikei2.svg": "/deploy-portfolio/static/media/wave-haikei2.04dfc97ae91936d5d7f0.svg",
-    "main.95feeea8.css.map": "/deploy-portfolio/static/css/main.95feeea8.css.map",
-    "main.364aaa0f.js.map": "/deploy-portfolio/static/js/main.364aaa0f.js.map"
+    "main.d8531726.css.map": "/deploy-portfolio/static/css/main.d8531726.css.map",
+    "main.a651af04.js.map": "/deploy-portfolio/static/js/main.a651af04.js.map"
   },
   "entrypoints": [
-    "static/css/main.95feeea8.css",
-    "static/js/main.364aaa0f.js"
+    "static/css/main.d8531726.css",
+    "static/js/main.a651af04.js"
   ]
 }
