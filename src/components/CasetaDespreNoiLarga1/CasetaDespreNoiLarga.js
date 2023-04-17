@@ -7,7 +7,7 @@ export const CasetaDespreNoiLarga = (props) => {
         <div className="container-caseta-despre-noi-larga">
             
             <div className="titlu">
-                <h3>Complexul BLA BLA RESIDENCE ofera</h3>
+                <h3>Complexul Explore Residence ofera</h3>
             </div>
             <div className="continut">
                 

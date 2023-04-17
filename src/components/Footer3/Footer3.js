@@ -33,13 +33,11 @@ export const Footer3 = () => {
                     </div>
                 </div>
                 <div className="linie-2-Footer3">
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Livrare</Link>
-                        <Link to='/'>Meniu</Link>
-                        <Link to='/'>Despre Noi</Link>
-                        <Link to='/'>Cariera</Link>
-                        <Link to='/'>Informatii nutritionale</Link>
-                        <Link to='/'>oferta zilei</Link>
+                        <Link to='/contact.restaurant'>Contact</Link>
+                        <Link to='/livrare.restaurant'>Livrare</Link>
+                        <Link to='/meniu.restaurant'>Meniu</Link>
+                        <Link to='/despreNoi.restaurant'>Despre Noi</Link>
+                        <Link to='/cariera.restaurant'>Cariera</Link>
                 </div>
                 <div className="linie-3-Footer3"> <p>©2023 LOS POLLOS HERMANOS.</p><p>TOATE DREPTURILE REZERVATE.</p></div>
             </div>

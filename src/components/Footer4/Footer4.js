@@ -67,7 +67,7 @@ export const Footer4 = (props) => {
                     </div>
                     <div className="container-info-footer4">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>Negoitamanuel@yahoo.com</p>
+                        <p>Manuel.Mircea20@gmail.com</p>
                     </div>
                     <div className="container-info-footer4">
                         <i class="fa-brands fa-instagram"></i>

@@ -27,12 +27,12 @@ export const WebsiteImobiliare = () => {
                     </div>
                     <div className="Casuta-Secundara-Layout">
                         <div className="secundara-mica">
-                            <h2>Titlu frumos si aratos</h2>
-                            <p> multe cuvinte scrise si rescrise vai vai vai e 2:00 noaptea si nu ma mai gandesc la nimic</p>
+                            <h2>Locație retrasă și sigură</h2>
+                            <p>Locația proiectului imobiliar este ideală, acesta fiind localizat la marginea orașului aproape de mall, de parc și de noua școală generală</p>
                         </div>
                         <div className="secundara-mica">
-                            <h2>Titlu frumos si aratos</h2>
-                            <p> multe cuvinte scrise si rescrise vai vai vai e 2:00 noaptea si nu ma mai gandesc la nimic</p>
+                            <h2>Materiale de cea mai bună calitate</h2>
+                            <p>Blocurile proiectului Explore Residence au fost construite cu materiale de calitate, locuințele având o izolare termică exceptională, o integritate structurală formidabilă și o estetică nemaipomenită</p>
                         </div>
                     </div>
                 </div>

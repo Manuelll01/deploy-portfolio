@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 import { Footer4 } from "../../components/Footer4/Footer4";
 import { Form2 } from "../../components/Form2/Form2";
 import { Link as Scroll} from 'react-scroll'
+import { Tabel } from "../../components/Tabel/Tabel";
+
+
+import CV_Negoiță_Mircea from "../../imagini/CV_Negoiță_Mircea.pdf"
 
 export const PrimaPagina = () => {
 
@@ -32,7 +36,7 @@ export const PrimaPagina = () => {
             <div className="caseta-acasa-flex">
                 <div  className="acasa-scris">
                     <h2>Entry Level Front End Developer</h2>
-                    <p >descriere cuvinte multe si plus si mai multe cuvinte foarte foarte multe foarte foarte foarte multe descriere cuvinte multe si plus si mai multe cuvinte foarte foarte multe foarte foarte multe foarte foarte multe foarte foarte multe</p>
+                    <p>I am Negoiță Mircea-Manuel. I'm a Selft-taught front end developer and i'm based in Brașov, România although i am willing to relocate if the right job opportunity comes along. I am ready to work and laern as much about web development as i have the opportunity to and i hope i can be a great fit to your team. </p>
                     <div className="container-butoane-pp">
                         <div className="buton-1-pp">
                             <Scroll  to='Contact' spy={true} smooth={true} offset={-100} duration={800}>Contact me</Scroll>
@@ -104,7 +108,27 @@ export const PrimaPagina = () => {
 
         
         <div className="DespreMine-PP" >
-            <h2>About me</h2>
+            
+            <div className="Caseta-DespreMine-PP">
+                <div className="Container-img-DespreMine">
+                    <img src="./img/poza-facultate.jpg"></img>
+                </div>
+                <div className="Container-scris-DespreMine">
+                    <h2>About me</h2>
+                    <p>My name is Negoiță Mircea-Manuel. I'm a Selft-taught front end developer based in Brașov, România(willing to relocate) and i'm very passionate and dedicated to my work. After researching online and wourking on my projects i consider that i aquired the necessary skils to work as an Entry Level Front End Developer and i'm trying to break into the industry. </p>
+                    <Tabel>
+                        <p>Full Name: Negoiță Mircea-Manuel</p>
+                        <p>Age: 21</p>
+                        <p>bachelor degree: Finance and Banking</p>
+                        <p>Phone: +40 774 649 357</p>
+                        <p>Adress: Brașov, Romania</p>
+                        <p>Gmail: Manuel.Mircea20@gmail.com</p>
+                    </Tabel>
+                    <div className="Container-buton-dowload">
+                        <a href={CV_Negoiță_Mircea} download >Download CV</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         

@@ -147,12 +147,47 @@
 
 .DespreMine-PP{
     background-color: #efeff0;
-    min-height: 100vh;
     color: #1a2940;
+    min-height: 100vh;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 150px;
 }
 .DespreMine-PP h2{
     font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 800;
+}
+.Caseta-DespreMine-PP{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+.Container-img-DespreMine{
+    width: 400px;
+    padding-right: 20px;
+}
+.Container-img-DespreMine img{
+    width: 100%;
+}
+.Container-scris-DespreMine{
+    width: 700px;
+}
+.Container-scris-DespreMine > p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.Container-scris-DespreMine a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f05927;
+    margin-top: 15px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.25rem;
     font-weight: 800;
 }
 
@@ -250,7 +285,7 @@
     margin: 5px 0;
 }
 @media (max-width: 1350px){
-    .Container-acasa, .Proiecte-Primapagina{
+    .Container-acasa, .Proiecte-Primapagina, .DespreMine-PP{
         padding: 0 75px;
     }
     .Container-acasa{
@@ -264,7 +299,7 @@
     .acasa-scris h2{
         margin-top: 1rem;
     }
-    .Container-acasa{
+    .Container-acasa, .DespreMine-PP{
         padding: 0 50px;
         padding-top: 10vh;
     }
@@ -310,6 +345,29 @@
     .CasetaProiect{
         width: 400px;
     }
+    
+
+
+    .Caseta-DespreMine-PP{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Caseta-DespreMine-PP h2{
+        text-align: center;
+    }
+    .Container-img-DespreMine{
+        padding: 0;
+    }
+    .Container-buton-dowload{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .Container-scris-DespreMine{
+        width: auto;
+        max-width: 700px;
+    }
+    
 
 
     .Container-interior-Contact-PP{
@@ -341,16 +399,13 @@
         padding-top: 10vh;
     }
     .acasa-img{
-        width: 80vw;
+        width: 100%;
     }
     .buton-2-pp a{
         height: 100%;
     }
 
 
-    .Proiecte-Primapagina{
-        padding: 0 20px;
-    }
     .Container-Casete-Proiecte{
         flex-direction: column;
     }
@@ -364,6 +419,14 @@
     }
     .Titlu-Si-Scris-Proiect{
         margin-top: 1rem;
+    }
+
+
+    .Proiecte-Primapagina, .DespreMine-PP{
+        padding: 0 20px;
+    }
+    .Container-img-DespreMine{
+        width: 100%;
     }
 }
 

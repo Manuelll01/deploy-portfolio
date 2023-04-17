@@ -20,11 +20,11 @@ export const Footer1 = () => {
                     <div className="info-content">
                         <div className="info">
                             <i class="fa-solid fa-phone"></i>
-                            <p>0774649357</p>
+                            <p>0774 649 357</p>
                         </div>
                         <div className="info">
                             <i class="fa-solid fa-envelope"></i>
-                            <p>Negoitamanuel@yahoo</p>
+                            <p>Manuel.Mircea20@gmail.com</p>
                         </div>
                         
                     </div>

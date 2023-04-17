@@ -6,7 +6,7 @@ export const CasetaDespreNoiInformatii = () => {
     return(
         <div className="container-grid-despre-noi">
                     <div className="element-1">
-                        <p>O combinație încântătoare de arhitectură contemporană, design inteligent și un sentiment remarcabil de conexiune cu natura fac din Residence 2 cea mai bună alegere pentru armonia vieții tale de familie. Ne pasă de calitatea vieții tale: aerul pe care îl respiri, apartamentul în care locuiești, lucrurile pe care le folosești zi de zi. De aceea am adus laolalta toate reperele unui stil de viață confortabil.Residence este o operă de artă urbană inspirată din natură. Este atitudinea ta complet nouă față de viață.</p>
+                        <p>O combinație încântătoare de arhitectură contemporană, design inteligent și un sentiment remarcabil de conexiune cu natura fac din Explore Residence 2 cea mai bună alegere pentru armonia vieții tale de familie. Ne pasă de calitatea vieții tale: aerul pe care îl respiri, apartamentul în care locuiești, lucrurile pe care le folosești zi de zi. De aceea am adus laolalta toate reperele unui stil de viață confortabil.Explore Residence este o operă de artă urbană inspirată din natură. Este atitudinea ta complet nouă față de viață.</p>
                     </div>
                     <div className="element-2">
                         <div className="caseta-1">

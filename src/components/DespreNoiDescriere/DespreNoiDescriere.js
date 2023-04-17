@@ -4,7 +4,7 @@ import "./DespreNoiDescriere.css"
 export const DespreNoiDescriere = () => {
     return(
         <div className="DespreNoiDescriere-container">
-            <div className="titlu-DespreNoiDescriere"><h3>Despre Blabla Residence</h3></div>
+            <div className="titlu-DespreNoiDescriere"><h3>Despre Explore Residence</h3></div>
             <div className="continut-DespreNoiDescriere">
                 <div className="scris-DespreNoiDescriere">
                     <p>Aglomerația și agitația orașului din fiecare zi îți afectează pe termen lung bucuria de a trăi. De aceea, ai nevoie un loc special care să contrabalanseze în aceeași măsură cu relaxare, siguranță și fericire. Casa care se transformă în „acasă”, familia la care visezi să te întorci la finalul zilei și activitățile preferate pe care le faceți împreună, toate se găsesc aici și așteaptă să se întâmple.</p>

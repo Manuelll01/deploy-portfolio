@@ -1,0 +1,22 @@
+.Container-Tabel{
+    width: 100%;
+    border: 2px solid #1a2940;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    container-type: inline-size;
+}
+
+.Container-Tabel p{
+    width: 50%;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+@container (max-width: 450px) {
+    .Container-Tabel p{
+        width: 100%;
+    }
+}
