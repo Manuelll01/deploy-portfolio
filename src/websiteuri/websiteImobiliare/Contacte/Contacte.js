@@ -78,10 +78,10 @@ export const Contacte = () => {
                         
                         <div className="container-caseta-poza-agent-de-vanzare">
                             <div className="caseta-poza-agent-de-vanzare">
-                                <CasetaPozaAgentDeVanzare1></CasetaPozaAgentDeVanzare1>
+                                <CasetaPozaAgentDeVanzare1 src="./img/poza-agent-de-vanzari.jpg"></CasetaPozaAgentDeVanzare1>
                             </div>
                             <div className="caseta-poza-agent-de-vanzare">
-                                <CasetaPozaAgentDeVanzare1></CasetaPozaAgentDeVanzare1>
+                                <CasetaPozaAgentDeVanzare1 src="./img/poza-agent-de-vanzari.jpg"></CasetaPozaAgentDeVanzare1>
                             </div>
                         </div>
                     </div>

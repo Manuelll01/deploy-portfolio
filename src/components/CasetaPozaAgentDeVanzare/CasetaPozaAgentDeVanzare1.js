@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CasetaPozaAgentDeVanzare1.css"
 
-export const CasetaPozaAgentDeVanzare1 = () => {
+export const CasetaPozaAgentDeVanzare1 = (props) => {
     return(
         <div className="caseta-poza-agenta-de-vanzare1">
             <div className="pozitie-angajat">
@@ -11,7 +11,7 @@ export const CasetaPozaAgentDeVanzare1 = () => {
             </div>
             <div className="poza-si-restul">
                 
-                <div className="container-poza-CasetaPozaAgentDeVanzare1"><img className="poza1-noutati" src="./img/poza1.jpg"></img></div>
+                <div className="container-poza-CasetaPozaAgentDeVanzare1"><img className="poza1-noutati" src={props.src}></img></div>
                 <div className="adresa-sediu">
                     <div className="iconita-1-CasetaPozaAgentDeVanzare1"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
                     <p>Str. imaginară, Nr. 48</p>

@@ -197,6 +197,8 @@
     margin-top: 0.5rem;
 }
 .acasa-img{
+    width: 450px;
+    aspect-ratio: 4/5;
 }
 .container-img-acasa{
     position: relative;

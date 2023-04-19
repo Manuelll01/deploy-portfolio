@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link, Router } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./NavBar3.css"
 import { data } from "./NavBar3Data";
 import * as faIcons from "react-icons/fa";
 import { data2 } from "./NavBar3Data";
-import { ProductSlider } from "../ProductSlider(swiper)/ProductSlider";
 
 export const NavBar3 = (props) => {
     const [scroll, setScroll] = useState(false)
