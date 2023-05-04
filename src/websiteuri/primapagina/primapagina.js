@@ -156,10 +156,10 @@ export const PrimaPagina = () => {
                     </div>
                     <div className="cutie-contact">
                         <div className="cutie-contact-iconita">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <i class="fa-brands fa-github"></i>
                         </div>
-                        <h4>Adress</h4>
-                        <p>Brasov, Romania</p>
+                        <h4>Github</h4>
+                        <p>github.com/Manuelll01/deploy-portfolio</p>
                     </div>
                 </div>
             </div>
