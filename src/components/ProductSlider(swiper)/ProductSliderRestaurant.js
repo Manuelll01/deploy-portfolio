@@ -41,6 +41,7 @@ SwiperCore.use([Autoplay]);
         loop={true}
         className='Styles.mySwiper'
         navigation //(sagetile)
+        
         >
           <SwiperSlide>
             <div className="container-imagine">

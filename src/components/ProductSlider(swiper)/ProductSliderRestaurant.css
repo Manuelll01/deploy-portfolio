@@ -54,7 +54,6 @@ basic sa dispara*/
 .imagine-ProductSlider-Restaurant{
     width: 100%;
     height: calc(30vw + 200px);
-    max-height: 700px;
     object-fit: cover;
 }
 

@@ -32,7 +32,9 @@
 .caseta-acasa-flex{
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px;
+    align-self: center;
 }
 .acasa-scris{
     display: flex;
@@ -112,7 +114,9 @@
 .caseta-proiecte-flex{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     max-width: 1400px;
+    align-self: center;
 }
 .Container-Casete-Proiecte{
     display: flex;
@@ -162,7 +166,9 @@
 .Caseta-DespreMine-PP{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     max-width: 1400px;
+    align-self: center;
 }
 .Container-img-DespreMine{
     width: 400px;

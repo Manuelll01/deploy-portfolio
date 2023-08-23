@@ -20,16 +20,16 @@
 .container-product-slider-restaurant{
     grid-area: img-slider;
     height: calc(30vw + 200px);
-    max-height: 700px;
+    /* max-height: 700px; */
 }
 .container-caseta-1-restaurant{
     grid-area: caseta-1;
-    max-height: 700px;
+    /* max-height: 700px; */
     background-color: rgb(192, 8, 8);
 }
 .container-caseta-2-restaurant, .container-caseta-3-restaurant, .container-caseta-4-restaurant, .container-caseta-5-restaurant{
     grid-area: caseta-2;
-    max-height: 700px;
+    /* max-height: 700px; */
     background-color: rgb(192, 8, 8);
     border-bottom: 5px solid white;
     box-sizing: content-box;
@@ -63,7 +63,7 @@
 }
 .imagine-caseta-restaurant{
     width: 100%;
-    height: 30vw;
+    height: 100%;
 }
 .imagine-caseta-restaurant-jos{
     width: 100%;

@@ -11,6 +11,7 @@ import { Tabel } from "../../components/Tabel/Tabel";
 
 
 import CV_Negoiță_Mircea from "../../imagini/CV_Negoiță_Mircea.pdf"
+import { Fragment } from "react";
 
 export const PrimaPagina = () => {
 
@@ -24,6 +25,37 @@ export const PrimaPagina = () => {
         }
         ScrollUpPage()
     }, [variabilaNeschimbata])
+
+
+    //Cache img
+    const [isLoading, setIsLoading] = useState(true);
+
+    const cacheImages = async (srcArray) => {
+        const promises = await srcArray.map((src) => {
+            return new Promise(function(resolve, reject) {
+                const img = new Image
+    
+                img.src = src;
+                img.onload = resolve();
+                img.onerror = reject();
+            });
+        });
+    
+        await Promise.all(promises)
+    
+        setIsLoading(false)
+    }
+
+    useEffect(() => {
+        const imgs = [
+            "img/salesman-no-background.png",
+            "https://www.thesprucepets.com/thmb/IpbkgVRbcb1xVONujX_gzk4VV8s=/2121x0/filters:no_upscale():strip_icc()/GettyImages-481523341-acc726247c9e4f5abef6f4bd13559691.jpg"
+            ]
+
+        cacheImages(imgs);
+    }, [])
+    
+
     return(
     <div className="prima-pagina">
 
@@ -101,8 +133,6 @@ export const PrimaPagina = () => {
                     </div>
                 </div>
 
-                
-                
             </div>
         </div>
 
@@ -163,9 +193,18 @@ export const PrimaPagina = () => {
                     </div>
                 </div>
             </div>
-            
         </div>
-            
+
+
+
+        {/* <div>
+            <Fragment>
+                <main>
+                    
+                </main>
+            </Fragment>
+        </div> */}
+
             {/*
                 <SideBarSlide
                 Acasa = {<AcasaPrimaPagina></AcasaPrimaPagina>}
